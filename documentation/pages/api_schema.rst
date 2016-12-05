@@ -15,23 +15,25 @@ Configuration PULL
 - API URL (with token):  ``https://confighub-api/rest/pull``
 - API URL (no token):  ``https://confighub-api/rest/pull/<account>/<repositoryName>``
 
-.. info::
-    - All data returned is in JSON format.
-    - All dates are expected and returned in ISO 8601 format (UTC): YYYY-MM-DDTHH:MM:SSZ.
-    - All parameters are passed through HTTP header fields.
-    - Method: GET
+
+.. note:: - All data returned is in JSON format.
+- All dates are expected and returned in ISO 8601 format (UTC): YYYY-MM-DDTHH:MM:SSZ.
+   - All parameters are passed through HTTP header fields.
+   - Method: GET
 
 **Example of API Pull Request/Response:**
 
 .. code-block:: bash
-    curl -i https://api.confighub.com/rest/pull \
-         -H "Client-Token: <token>"             \
-         -H "Context: <context>"                \
-         -H "Application-Name: myApp"           \
-         -H "Client-Version: v1.5"              \
-         -H "Files: demo.props"
+
+   curl -i https://api.confighub.com/rest/pull \
+        -H "Client-Token: <token>"             \
+        -H "Context: <context>"                \
+        -H "Application-Name: myApp"           \
+        -H "Client-Version: v1.5"              \
+        -H "Files: demo.props"
 
 .. code-block:: json
+
     {
       "generatedOn": "06/10/2016 22:38:13",
       "account": "ConfigHub",
