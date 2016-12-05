@@ -19,7 +19,10 @@ Configuration PULL
    - All parameters are passed through HTTP header fields.
    - Method: GET
 
-**Example of API Pull Request/Response:**
+
+Example of API Pull Request/Response
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 .. code-block:: bash
 
@@ -58,8 +61,8 @@ Configuration PULL
 
 
 
-PULL Request Headers
-~~~~~~~~~~~~~~~~~~~~
+Request Headers
+~~~~~~~~~~~~~~~
 
 *Client-Token*
 
