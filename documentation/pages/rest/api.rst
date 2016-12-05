@@ -1,4 +1,4 @@
-Contents:
+REST API
 
 .. toctree::
    :maxdepth: 2

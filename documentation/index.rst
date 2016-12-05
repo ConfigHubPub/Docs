@@ -8,11 +8,9 @@ Welcome to ConfigHub's documentation!
 
 
 .. toctree::
-   :maxdepth: 2
-   :caption: REST Api
+   :maxdepth: 3
+   :caption: API REST Schema
 
-   pages/rest/PUSH
-   pages/rest/PULL
-   pages/rest/INFO
+   pages/api_schema
 
 
