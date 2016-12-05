@@ -11,10 +11,9 @@ Contents:
 .. toctree::
     :maxdepth: 3
 
-    PUSH API
-        pages/rest/PUSH
-        pages/rest/PULL
-        pages/rest/INFO
+    pages/rest/PUSH
+    pages/rest/PULL
+    pages/rest/INFO
 
 
 Indices and tables
