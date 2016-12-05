@@ -1,14 +1,11 @@
 ===============
-REST API Schema
+REST PULL Api
 ===============
 
-The **REST API** specifies an interface for configuration push, pull and info.
+PULL API is used for a client to pull configuration from a ConfigHub server
+given a fully specified context.
 
-* :ref:`api-pull`
-* :ref:`api-push`
-
-
-.. _api-pull:
+The Pull response may contain key-value pairs, as well as resolved files (as per request).
 
 Configuration PULL
 ~~~~~~~~~~~~~~~~~~
@@ -130,6 +127,3 @@ HTTP Request Headers
 
 
 
-.. _api-push:
-Configuration PUSH
-~~~~~~~~~~~~~~~~~~

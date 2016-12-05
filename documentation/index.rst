@@ -11,6 +11,6 @@ Welcome to ConfigHub's documentation!
    :maxdepth: 3
    :caption: API REST Schema
 
-   pages/api_schema
+   pages/api_pull
 
 
