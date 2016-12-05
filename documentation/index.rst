@@ -11,6 +11,8 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   pages/REST_API
+
 
 
 Indices and tables
