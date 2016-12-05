@@ -9,11 +9,12 @@ Welcome to ConfigHub's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 3
 
-   pages/rest/PUSH
-   pages/rest/PULL
-   pages/rest/INFO
+    PUSH API
+        pages/rest/PUSH
+        pages/rest/PULL
+        pages/rest/INFO
 
 
 Indices and tables
