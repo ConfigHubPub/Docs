@@ -6,8 +6,6 @@
 Welcome to ConfigHub's documentation!
 =====================================
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
    :caption: REST API
@@ -16,11 +14,4 @@ Contents:
     pages/rest/PULL
     pages/rest/INFO
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
