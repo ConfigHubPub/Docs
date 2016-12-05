@@ -31,7 +31,6 @@ Configuration PULL
         -H "Application-Name: myApp"           \
         -H "Client-Version: v1.5"              \
         -H "Files: demo.props"
-
 .. code-block:: json
 
     {
