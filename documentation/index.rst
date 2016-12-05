@@ -9,9 +9,9 @@ Welcome to ConfigHub's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
-   pages/REST_API
+   pages/api
 
 
 
