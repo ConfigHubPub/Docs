@@ -11,7 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 3
 
-   pages/api
+   pages/rest/api
 
 
 
