@@ -8,14 +8,14 @@ given a fully specified context.
 The Pull response may contain key-value pairs, as well as resolved files (as per request).
 
 Configuration PULL
-~~~~~~~~~~~~~~~~~~
+
 
 - API URL (with token):  ``https://confighub-api/rest/pull``
 - API URL (no token):  ``https://confighub-api/rest/pull/<account>/<repositoryName>``
 
 
 .. note:: - All data returned is in JSON format.
-   - All dates are expected and returned in ISO 8601 format (UTC): YYYY-MM-DDTHH:MM:SSZ.
+   - All dates are expected and returned in ``ISO 8601`` format (UTC): ``YYYY-MM-DDTHH:MM:SSZ``.
    - All parameters are passed through HTTP header fields.
    - Method: GET
 
@@ -58,8 +58,8 @@ Configuration PULL
 
 
 
-HTTP Request Headers
---------------------
+PULL Request Headers
+~~~~~~~~~~~~~~~~~~~~
 
 *Client-Token*
 
@@ -68,7 +68,7 @@ HTTP Request Headers
 
 *Context*
 
-   Context for the pull request has to be a fully-qualified-context (each context rank has to be specified - no wildcards). Context items are semi-colon delimited, and are ordered in order of have to be in context rank order. For example, a repository with context size of 3 levels Environment > Application > Instance could be defined as::
+   Context for the pull request has to be a fully-qualified-context (each context rank has to be specified - no wildcards). Context items are semi-colon delimited, and are ordered in order of have to be in context rank order. For example, a repository with context size of 3 levels ``Environment > Application > Instance`` could be defined as::
 
    -H "Context:  Production;MyApp;MyAppInstance "
 
@@ -79,11 +79,11 @@ HTTP Request Headers
 
 *Repository-Date*
 
-   ISO 8601 date format (UTC) YYYY-MM-DDTHH:MM:SSZ lets you specify a point in time for which to pull configuration. If not specified, latest configuration is returned.
+   ISO 8601 date format (UTC) ``YYYY-MM-DDTHH:MM:SSZ`` lets you specify a point in time for which to pull configuration. If not specified, latest configuration is returned.
 
 *Tag*
 
-   Name of the defined tag. Returned configuration is for a point in time as specified by the tag. If both Tag and Repository-Date headers are specified, Repository-Date is only used if the tag is no longer available.
+   Name of the defined tag. Returned configuration is for a point in time as specified by the tag. If both Tag and *Repository-Date* headers are specified, Repository-Date is only used if the tag is no longer available.
 
 *Security-Profile-Auth*
 
@@ -97,7 +97,7 @@ HTTP Request Headers
       - Use of ConfigHub API in a selected language come functionality for local decryption;
       - A client can implement its own decryption;
 
-   Security-Profile-Auth uses JSON format: `{'Security-Profile_1':'password', 'Security-Profile_2':'password',...}`
+   Security-Profile-Auth uses JSON format: ``{'Security-Profile_1':'password', 'Security-Profile_2':'password',...}``
 
 *Client-Version*
 
@@ -110,19 +110,19 @@ HTTP Request Headers
 
 *Include-Comments*
 
-   If value is true response includes comments for property keys.
+   If value is ``true`` response includes comments for property keys.
 
 *Include-Value-Context*
 
-   If value is true response includes context of resolved property values.
+   If value is ``true`` response includes context of resolved property values.
 
 *Pretty*
 
-   If value is true, returned JSON is 'pretty' - formatted.
+   If value is ``true``, returned JSON is 'pretty' - formatted.
 
 *No-Properties*
 
-  If value is true key-value pairs are not returned. This is useful if you are only interested in pulling files, and want to make transaction more efficient.
+  If value is ``true`` key-value pairs are not returned. This is useful if you are only interested in pulling files, and want to make transaction more efficient.
 
 
 
