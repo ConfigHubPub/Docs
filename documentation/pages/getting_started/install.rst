@@ -6,9 +6,8 @@ Local ConfigHub Installation
 
 .. _system-requirements:
 
-===================
 System requirements
-===================
+~~~~~~~~~~~~~~~~~~~
 
 The ConfigHub server application has the following prerequisites:
 
@@ -18,35 +17,68 @@ The ConfigHub server application has the following prerequisites:
 
 
 Download and Install
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
     - Download and install Java8 to your local host, and set the environment variable
       JAVA_HOME to the location of the Java's bin directory.
 
     - `Download <https://www.confighub.com/download>`_ the latest version of ConfigHub:
 
-    - Uncompress the downloaded file
+    - Uncompress the downloaded file::
       tar -xzvf confighub-<version>.tar.gz
 
 
 Manual Configuration
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
-    - Edit the configuration file "confighub.properties" in confighub-<version> directory.
+    - Edit the configuration file ``confighub.properties`` in confighub-<version> directory.
     - Each configuration parameter has to be specified.
+
+.. code-block:: bash
+
+   # Settings for the primary ConfigHub Database.
+   db.main.host = 127.0.0.1
+   db.main.port = 3306
+   db.main.name = ConfigHub
+   db.main.username =
+   db.main.password =
+
+   # Settings for the database that will store all incoming client (API) requests.
+   db.api.host = 127.0.0.1
+   db.api.port = 3306
+   db.api.name = ConfigHubClientRequests
+   db.api.username =
+   db.api.password =
+
+   # Path to the location where all ConfigHub service logs are stored.
+   confighub.logging.path = /var/log/confighub
+
+   # Memory assigned to the ConfigHub service.  It is recommended to assign 4g or more.
+   confighub.memory = 4g
+
+   # HTTP and HTTPs ports
+   confighub.http.port = 80
+   confighub.https.port = 443
+
+   # Specify an override to the default self-signed certificate/keystore.
+   confighub.https.keystoreFile = cert/confighub_default.jks
+   confighub.https.keystoreAlias = confighub
+   confighub.https.keystorePass = confighub
+
 
 
 ConfigHub License File
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
     - Place your license file "license.json" received from ConfigHub into the confighub-<version> directory
       (same directory as the confighub.properties file.)
 
 
+
 Starting and Stopping ConfigHub Service
----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    - To start ConfigHub, run confighub-<version>/server/bin/startup.sh
-    - To stop ConfigHub, run confighub-<version>/server/bin/shutdown.sh
+    - To start ConfigHub, run:: confighub-<version>/server/bin/startup.sh
+    - To stop ConfigHub, run:: confighub-<version>/server/bin/shutdown.sh
 
-    If you are running ConfigHub on a reserved port (i.e. 80, and 443), use root access (or sudo).
+    If you are running ConfigHub on a reserved port (i.e. 80, and 443), use root access (or ``sudo``).
