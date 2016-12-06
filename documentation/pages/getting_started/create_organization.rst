@@ -18,10 +18,6 @@ To create an organization, once logged in:
 
 Once the organization is created, you can create repositories and add users as owners and administrators.
 
-.. table:: Truth table for "not"
-
-   :widths: auto
-
    +---------------+--------------------------------------------------------+
    | Role          | Access Description                                     |
    +===============+========================================================+
@@ -32,19 +28,3 @@ Once the organization is created, you can create repositories and add users as o
    | Administrator | Can manage repositories, teams, access control and can |
    |               | add other ConfigHub users to the repositories.         |
    +---------------+--------------------------------------------------------+
-
-
-
-
-
-
-.. table:: Truth table for "not"
-
-   :widths: auto
-
-   =====  =====
-     A    not A
-   =====  =====
-   False  True
-   True   False
-   =====  =====
