@@ -3,14 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to ConfigHub's documentation!
-=====================================
+Welcome to ConfigHub documentation
+==================================
+
 
 
 .. toctree::
    :maxdepth: 2
    :caption: API REST Schema
 
+   getting_started/index.rst
    pages/api_pull
    pages/api_push
 

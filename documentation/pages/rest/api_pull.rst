@@ -1,6 +1,6 @@
-========
+********
 PULL Api
-========
+********
 
 With fully specified context, pull configuration from ConfigHub service.
 The JSON response may contain key-value pairs, as well as resolved files (as per request).
