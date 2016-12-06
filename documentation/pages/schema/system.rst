@@ -58,6 +58,7 @@ Request Headers
 
 
 and this is something that needs
+
 .. rst-class:: fa fa-inbox
 
     the fontawesome flag will be attached to inbox this paragraph
@@ -67,5 +68,6 @@ nnnnnnn
 
 
 and this is something that needs
+
 .. rst-class:: fa fa-inbox
     the fontawesome flag will be attached to inbox this paragraph
