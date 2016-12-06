@@ -14,14 +14,14 @@ Configuration PULL
 - API URL (no token):  ``https://confighub-api/rest/pull/<account>/<repositoryName>``
 
 
-.. note:: - All data returned is in JSON format.
+.. info:: - All data returned is in JSON format.
    - All dates are expected and returned in ``ISO 8601`` format (UTC): ``YYYY-MM-DDTHH:MM:SSZ``.
    - All parameters are passed through HTTP header fields.
    - Method: GET
 
 
-Example of API Pull Request/Response
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example Pull Request/Response
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. code-block:: bash
