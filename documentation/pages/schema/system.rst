@@ -23,26 +23,26 @@ Example Usage
 
 .. code-block:: json
 
-HTTP/1.1 200 OK
-Date: Fri, 25 Nov 2016 19:55:01 GMT
-Content-Type: application/json
-Content-Length: 635
-Server: TomEE
-{
-  "version": {
-    "version": "v1.2.0"
-  },
-  "license": {
-    "First Name": "John",
-    "Last Name": "Doe",
-    "Email": "john.doe@acme.com",
-    "Company": "Acme Inc.",
-    "Title": "CTO",
-    "Type": "Trial",
-    "Expires": "Wed, Mar 1, 2017",
-    "LicenseKey": "..."
-  }
-}
+    HTTP/1.1 200 OK
+    Date: Fri, 25 Nov 2016 19:55:01 GMT
+    Content-Type: application/json
+    Content-Length: 635
+    Server: TomEE
+    {
+       "version": {
+          "version": "v1.2.0"
+       },
+       "license": {
+          "First Name": "John",
+          "Last Name": "Doe",
+          "Email": "john.doe@acme.com",
+          "Company": "Acme Inc.",
+          "Title": "CTO",
+          "Type": "Trial",
+          "Expires": "Wed, Mar 1, 2017",
+          "LicenseKey": "..."
+       }
+    }
 
 
 Request Headers
