@@ -23,6 +23,7 @@ Once the organization is created, you can create repositories and add users as o
 +===============+==============================================================+
 | Owner         |Can manage every aspect of the organization and grant         |
 |               |administrative access to other ConfigHub users.               |
+|               |                                                              |
 |               |**Only owners can delete repositories.**                      |
 +---------------+--------------------------------------------------------------+
 | Administrator |Can manage repositories, teams,  access control and can       |
