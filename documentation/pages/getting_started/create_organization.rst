@@ -11,7 +11,21 @@ permissions.
 
 To distribute this workload, organization let's you assign repository owners and administrators.
 
-To create an organization, once logged in, click on the **+ New** link, and choose *Organization*.
+To create an organization, once logged in:
+1. Click on the **New** link (top-right) and choose *Organization*
+2. Enter the Organization name, and save.
+
+Once the organization is created, you can create repositories and add users as owners and administrators.
+
+============= ========================================================================================================
+Role          Access Description
+============= ========================================================================================================
+Owner         Can manage every aspect of the organization and grant administrative access to other ConfigHub users.
+              **Only owners can delete repositories.**
+Administrator Can manage repositories, teams, access control and can add other ConfigHub users to the repositories.
+============= ========================================================================================================
+
+
 
 
 
