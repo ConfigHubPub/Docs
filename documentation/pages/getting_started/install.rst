@@ -19,23 +19,23 @@ The ConfigHub server application has the following prerequisites:
 Download and Install
 ~~~~~~~~~~~~~~~~~~~~
 
-    - Download and install Java8 to your localhost.  Set the ``JAVA_HOME`` environment variable to
-      Java's bin directory.:
+* Download and install Java8 to your localhost.  Set the ``JAVA_HOME`` environment variable to
+Java's bin directory.:
 
-         export JAVA_HOME=/path/to/java8/bin
+   export JAVA_HOME=/path/to/java8/bin
 
-    - `Download <https://www.confighub.com/download>`_ the latest version of ConfigHub:
+* `Download <https://www.confighub.com/download>`_ the latest version of ConfigHub:
 
-    - Uncompress the downloaded file::
+* Uncompress the downloaded file::
 
-         tar -xzvf confighub-<version>.tar.gz
+   tar -xzvf confighub-<version>.tar.gz
 
 
 Manual Configuration
 ~~~~~~~~~~~~~~~~~~~~
 
-    - Edit the configuration file ``confighub.properties`` in confighub-<version> directory.
-    - Each configuration parameter has to be specified.
+* Edit the configuration file ``confighub.properties`` in confighub-<version> directory.
+* Each configuration parameter has to be specified.
 
 .. code-block:: bash
 
@@ -73,20 +73,20 @@ Manual Configuration
 ConfigHub License File
 ~~~~~~~~~~~~~~~~~~~~~~
 
-    - Place your license file "license.json" received from ConfigHub into the confighub-<version> directory
-      (same directory as the confighub.properties file.)
+Place your license file "license.json" received from ConfigHub into the confighub-<version> directory
+(same directory as the confighub.properties file.)
 
 
 
 Starting and Stopping ConfigHub Service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    - To start ConfigHub, run::
+* To start ConfigHub, run::
 
-       confighub-<version>/server/bin/startup.sh
+   confighub-<version>/server/bin/startup.sh
 
-    - To stop ConfigHub, run::
+* To stop ConfigHub, run::
 
-       confighub-<version>/server/bin/shutdown.sh
+   confighub-<version>/server/bin/shutdown.sh
 
-    If you are running ConfigHub on a reserved port (i.e. 80, and 443), use root access (or ``sudo``).
+.. note:: If you are running ConfigHub on a reserved port (i.e. 80, and 443), use root access (or ``sudo``).
