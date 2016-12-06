@@ -54,6 +54,15 @@ Request Headers
    Version of the client API. If not specified, ConfigHub assumes the latest version. Even through this is
    not a required parameter, you are encouraged to specify a version.
 
-*Pretty* .. rst-class:: fa fa-inbox asdasd
+*Pretty*
 
    If value is ``true``, returned JSON is 'pretty' - formatted.
+
+.. rst-class:: fa fa-fontawesome
+
+   the fontawesome flag will be attached to this paragraph
+
+
+.. rst-class:: fa fa-inbox
+
+   the fontawesome flag will be attached to inbox this paragraph
