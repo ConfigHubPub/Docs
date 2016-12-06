@@ -10,10 +10,9 @@ Welcome to ConfigHub documentation
 
 .. toctree::
    :maxdepth: 2
-   :caption: API REST Schema
+   :caption: ConfigHub
 
    pages/getting_started
-   pages/rest/api_pull
-   pages/rest/api_push
+   pages/schema
 
 
