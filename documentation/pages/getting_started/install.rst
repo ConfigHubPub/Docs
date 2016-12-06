@@ -25,7 +25,8 @@ Download and Install
     - `Download <https://www.confighub.com/download>`_ the latest version of ConfigHub:
 
     - Uncompress the downloaded file::
-      tar -xzvf confighub-<version>.tar.gz
+
+         tar -xzvf confighub-<version>.tar.gz
 
 
 Manual Configuration
@@ -78,7 +79,12 @@ ConfigHub License File
 Starting and Stopping ConfigHub Service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    - To start ConfigHub, run:: confighub-<version>/server/bin/startup.sh
-    - To stop ConfigHub, run:: confighub-<version>/server/bin/shutdown.sh
+    - To start ConfigHub, run::
+
+       confighub-<version>/server/bin/startup.sh
+
+    - To stop ConfigHub, run::
+
+       confighub-<version>/server/bin/shutdown.sh
 
     If you are running ConfigHub on a reserved port (i.e. 80, and 443), use root access (or ``sudo``).
