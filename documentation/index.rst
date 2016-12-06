@@ -6,17 +6,8 @@
 Welcome to ConfigHub documentation
 ==================================
 
-What is ConfigHub?
-~~~~~~~~~~~~~~~~~~
-
 ConfigHub is a platform for software configuration.  Configuration is managed
-programmatically or through the Web-based user interface.
-
-ConfigHub lets you assign users to teams, manage access to configuration, maintain security for sensitive
-data and tag your configuration to correspond to your software release versions.
-
-Integrate with ConfigHub - development becomes more fluid, mundane tasks are eliminated, and new ways of
-leveraging and thinking about configuration will emerge.
+programmatically or through the web-based user interface.
 
 
 .. toctree::
