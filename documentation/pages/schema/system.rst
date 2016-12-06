@@ -5,9 +5,7 @@ System Information
 
 API returns details of ConfigHub License and version.
 
-.. raw:: html
-
-   <i class="fa fa-inbox"></i>
+.. rst-class:: fa fa-inbox
 
 - API URL:  ``https://confighub-api/rest/info/system``
 
