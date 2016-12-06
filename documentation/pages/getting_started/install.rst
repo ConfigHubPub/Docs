@@ -19,8 +19,7 @@ The ConfigHub server application has the following prerequisites:
 Download and Install
 ~~~~~~~~~~~~~~~~~~~~
 
-* Download and install Java8 to your localhost.  Set the ``JAVA_HOME`` environment variable to
-Java's bin directory.:
+* Download and install Java8 to your localhost.  Set the ``JAVA_HOME`` environment variable to Java's bin directory::
 
    export JAVA_HOME=/path/to/java8/bin
 
@@ -81,11 +80,11 @@ Place your license file "license.json" received from ConfigHub into the confighu
 Starting and Stopping ConfigHub Service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* To start ConfigHub, run::
+* Start ConfigHub::
 
    confighub-<version>/server/bin/startup.sh
 
-* To stop ConfigHub, run::
+* Stop ConfigHub::
 
    confighub-<version>/server/bin/shutdown.sh
 
