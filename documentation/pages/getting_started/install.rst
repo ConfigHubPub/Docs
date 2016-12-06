@@ -19,8 +19,10 @@ The ConfigHub server application has the following prerequisites:
 Download and Install
 ~~~~~~~~~~~~~~~~~~~~
 
-    - Download and install Java8 to your local host, and set the environment variable
-      JAVA_HOME to the location of the Java's bin directory.
+    - Download and install Java8 to your localhost.  Set the ``JAVA_HOME`` environment variable to
+      Java's bin directory.:
+
+         export JAVA_HOME=/path/to/java8/bin
 
     - `Download <https://www.confighub.com/download>`_ the latest version of ConfigHub:
 
