@@ -12,5 +12,6 @@ Welcome to ConfigHub's documentation!
    :caption: API REST Schema
 
    pages/api_pull
+   pages/api_push
 
 
