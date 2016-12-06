@@ -14,19 +14,8 @@ Configuration PULL
 - API URL (no token):  ``https://confighub-api/rest/pull/<account>/<repositoryName>``
 
 
-.. hint:: - All data returned is in JSON format.
+.. note:: - All data returned is in JSON format.
    - All dates are expected and returned in ``ISO 8601`` format (UTC): ``YYYY-MM-DDTHH:MM:SSZ``.
-   - All parameters are passed through HTTP header fields.
-   - Method: GET
-
-.. tip:: - All data returned is in JSON format.
-- All dates are expected and returned in ``ISO 8601`` format (UTC): ``YYYY-MM-DDTHH:MM:SSZ``.
-   - All parameters are passed through HTTP header fields.
-   - Method: GET
-
-
-.. attention:: - All data returned is in JSON format.
-- All dates are expected and returned in ``ISO 8601`` format (UTC): ``YYYY-MM-DDTHH:MM:SSZ``.
    - All parameters are passed through HTTP header fields.
    - Method: GET
 
