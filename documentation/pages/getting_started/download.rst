@@ -1,5 +1,4 @@
-Install & Configure
--------------------
+.. _download:
 
 Download ConfigHub
 ^^^^^^^^^^^^^^^^^^
