@@ -11,7 +11,7 @@ Configuration PULL
 
 
 - API URL (with token):  ``https://confighub-api/rest/pull``
-- API URL (no token):  ``https://confighub-api/rest/pull/<account>/<repositoryName>``
+- API URL (no token):  ``https://confighub-api/rest/pull/<account>/<repository>``
 
 
 .. note:: - All data returned is in JSON format.
@@ -67,7 +67,7 @@ Request Headers
 
 *Client-Token*
 
-   Client token identifies a specific repository. This field is not required if the account/repository is specified as part of the URL
+   Client token identifies a specific repository. This field is not required if the account and repository are specified as part of the URL.
 
 
 *Context*
@@ -110,7 +110,7 @@ Request Headers
 
 *Application-Name*
 
-   This field helps you identify application that is pulling configuration. If is used in the audit logs for pull request.
+   This field helps you identify application or a client pulling configuration. Visible in Pull Request tab.
 
 *Include-Comments*
 

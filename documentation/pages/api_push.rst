@@ -7,7 +7,7 @@ Push API allows clients to update or create properties, context values and tags.
 Configuration PUSH
 
 - API URL (with token):  ``https://confighub-api/rest/push``
-- API URL (no token):  ``https://confighub-api/rest/push/<account>/<repositoryName>``
+- API URL (no token):  ``https://confighub-api/rest/push/<account>/<repository>``
 
 
 .. note:: - All data returned is in JSON format.
@@ -53,3 +53,40 @@ Example Push Request/Response
                        ]
                      }
                    ]'
+.. code-block:: bash
+
+   Successful Response:
+
+   HTTP/1.1 200 OK
+   Date: Tue, 15 Nov 2016 17:15:43 GMT
+   Content-Length: 0
+   Server: TomEE
+
+
+   Error Response:
+
+   HTTP/1.1 304 Not Modified
+   Date: Tue, 15 Nov 2016 02:49:23 GMT
+   ETag: "Invalid password specified."
+   Server: TomEE
+
+
+Request Headers
+~~~~~~~~~~~~~~~
+
+*Content-Type*  **Required**
+
+   Content-type header attribute must be set to ``application/json``.
+
+*Client-Token*
+
+   Client token identifies a specific repository. This field is not required if the account and repository are specified as part of the URL.
+
+*Client-Version*
+
+   Version of the client API. If not specified, ConfigHub assumes the latest version. Even through this is not a required parameter, you are encouraged to specify a version.
+
+
+*Application-Name*
+
+   This field helps you identify application or a client pushing configuration.  Visible in Pull Request tab.
