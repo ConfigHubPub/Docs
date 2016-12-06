@@ -1,0 +1,70 @@
+.. _info:
+
+Repository Info
+^^^^^^^^^^^^^^^
+
+This API provides information about a specific repository.  It allows for glob syntax search of
+configuration files, and context definition.
+
+
+- API URL (with token):  ``https://confighub-api/rest/info``
+- API URL (no token):  ``https://confighub-api/rest/info/<account>/<repository>``
+
+
+.. note:: - All data returned is in JSON format.
+   - All dates are expected and returned in ``ISO 8601`` format (UTC): ``YYYY-MM-DDTHH:MM:SSZ``.
+   - All parameters are passed through HTTP header fields.
+   - Method: GET
+
+Example Repository Info Request/Response
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+
+   curl -i https://api.confighub.com/rest/info      \
+        -H "Client-Token: <token>"                  \
+        -H "Repository-Date: <ISO 8601 date (UTC)>" \
+        -H "Tag: <repo tag>"                        \
+        -H "Client-Version: v1.5"                   \
+        -H "Files: true/false"                      \
+        -H "Files-Glob: <glob expression>"          \
+        -H "Context-Elements: true/false"           \
+        -H "Context-Labels: <comma delimited list>" \
+        -H "Pretty: true/false"
+
+.. code-block:: json
+
+    HTTP/1.1 200 OK
+    Date: Wed, 16 Nov 2016 18:12:33 GMT
+    Content-Type: application/json
+    Content-Length: 483
+    Server: TomEE
+    {
+       "account": "ConfigHub",
+       "repository": "HowItWorks",
+       "generatedOn": "11/16/2016 18:12:33",
+       "context": [ "Environment", "Application" ],
+       "contextElements":
+       {
+          "Environment": [ "Production", "Development" ],
+          "Application": [ "Analytics", "Collector", "WebDashboard" ]
+       },
+       "files": [
+          {
+             "name": "nginx2.conf",
+             "path": "nginx/nginx2.conf",
+             "lastModified": 1479260284272
+          }
+       ]
+    }
+
+
+Request Headers
+~~~~~~~~~~~~~~~
+
+*Client-Token*
+
+   Client token identifies a specific repository. This field is not required if the account and repository are specified as part of the URL.
+
+*Repository-Date*
+
