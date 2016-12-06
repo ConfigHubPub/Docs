@@ -12,8 +12,8 @@ Welcome to ConfigHub documentation
    :maxdepth: 2
    :caption: API REST Schema
 
-   getting_started/index.rst
-   pages/api_pull
-   pages/api_push
+   pages/getting_started
+   pages/rest/api_pull
+   pages/rest/api_push
 
 

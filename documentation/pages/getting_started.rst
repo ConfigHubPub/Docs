@@ -10,5 +10,5 @@ todo: Add demo line
 .. toctree::
 :titlesonly:
 
-   getting_started/download.rst
-   getting_started/install.rst
+   getting_started/download
+   getting_started/install
