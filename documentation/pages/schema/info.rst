@@ -16,8 +16,8 @@ configuration files, and context definition.
    - All parameters are passed through HTTP header fields.
    - Method: GET
 
-Example Repository Info Request/Response
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example Usage
+~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -64,7 +64,43 @@ Request Headers
 
 *Client-Token*
 
-   Client token identifies a specific repository. This field is not required if the account and repository are specified as part of the URL.
+   Client token identifies a specific repository. This field is not required if the account and repository
+   are specified as part of the URL.
 
 *Repository-Date*
 
+   ISO 8601 date format (UTC) ``YYYY-MM-DDTHH:MM:SSZ`` lets you specify a point in time for which to pull
+   repository information. If not specified, latest information is returned.
+
+*Tag*
+
+   Name of the defined tag. Returned information is for a point in time as specified by the tag. If both
+   Tag and *Repository-Date* headers are specified, Repository-Date is only used if the tag is no longer available.
+
+
+*Client-Version*
+
+   Version of the client API. If not specified, ConfigHub assumes the latest version. Even through this is
+   not a required parameter, you are encouraged to specify a version.
+
+*Files*
+
+   Boolean flag to indicate if all files should be returned. If *Files-Glob* header is specified, this
+   flag is ignored and treated true by default.
+
+*Files-Glob*
+
+   Enables glob expressions while searching for files over their path and name.
+
+*Context-Elements*
+
+   Boolean flag to indicate if all context elements should be returned. If *Context-Labels* header is
+   specified, this flag is ignored and treated true by default.
+
+*Context-Labels*
+
+   Limit context elements returned by the list of context labels. Comma delimited list of context labels.
+
+*Pretty*
+
+   If value is ``true``, returned JSON is 'pretty' - formatted.

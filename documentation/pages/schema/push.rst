@@ -13,8 +13,8 @@ Push API allows clients to update or create properties, context values and tags.
    - Response code: 200 (Success); 304 (Not modified).
    - Method: POST
 
-Example Push Request/Response
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example Usage
+~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -76,11 +76,13 @@ Request Headers
 
 *Client-Token*
 
-   Client token identifies a specific repository. This field is not required if the account and repository are specified as part of the URL.
+   Client token identifies a specific repository. This field is not required if the account and repository
+   are specified as part of the URL.
 
 *Client-Version*
 
-   Version of the client API. If not specified, ConfigHub assumes the latest version. Even through this is not a required parameter, you are encouraged to specify a version.
+   Version of the client API. If not specified, ConfigHub assumes the latest version. Even through this is
+   not a required parameter, you are encouraged to specify a version.
 
 
 *Application-Name*
