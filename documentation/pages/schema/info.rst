@@ -16,8 +16,8 @@ configuration files, and context definition.
    - All parameters are passed through HTTP header fields.
    - Method: GET
 
-Example Usage
-~~~~~~~~~~~~~
+Usage
+-----
 
 .. code-block:: bash
 
@@ -60,7 +60,7 @@ Example Usage
 
 
 Request Headers
-~~~~~~~~~~~~~~~
+---------------
 
 *Client-Token*
 

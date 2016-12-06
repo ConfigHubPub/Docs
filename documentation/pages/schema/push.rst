@@ -13,8 +13,8 @@ Push API allows clients to update or create properties, context values and tags.
    - Response code: 200 (Success); 304 (Not modified).
    - Method: POST
 
-Example Usage
-~~~~~~~~~~~~~
+Usage
+-----
 
 .. code-block:: bash
 
@@ -68,7 +68,7 @@ Example Usage
 
 
 Request Headers
-~~~~~~~~~~~~~~~
+---------------
 
 *Content-Type*  **Required**
 

@@ -16,8 +16,8 @@ The JSON response may contain key-value pairs, as well as resolved files (as per
    - Method: GET
 
 
-Example Usage
-~~~~~~~~~~~~~
+Usage
+-----
 
 .. code-block:: bash
 
@@ -63,7 +63,7 @@ Example Usage
 
 
 Request Headers
-~~~~~~~~~~~~~~~
+---------------
 
 *Client-Token*
 

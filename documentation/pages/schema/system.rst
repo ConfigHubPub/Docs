@@ -5,16 +5,14 @@ System Information
 
 API returns details of ConfigHub License and version.
 
-.. rst-class:: fa fa-inbox
-
 - API URL:  ``https://confighub-api/rest/info/system``
 
 .. note:: - All data returned is in JSON format.
    - All parameters are passed through HTTP header fields.
    - Method: GET
 
-Example Usage
-~~~~~~~~~~~~~
+Usage
+-----
 
 .. code-block:: bash
 
@@ -47,7 +45,7 @@ Example Usage
 
 
 Request Headers
-~~~~~~~~~~~~~~~
+---------------
 
 *Client-Version*
 
@@ -58,11 +56,16 @@ Request Headers
 
    If value is ``true``, returned JSON is 'pretty' - formatted.
 
-.. rst-class:: fa fa-fontawesome
 
-   the fontawesome flag will be attached to this paragraph
-
-
+and this is something that needs
 .. rst-class:: fa fa-inbox
 
-   the fontawesome flag will be attached to inbox this paragraph
+    the fontawesome flag will be attached to inbox this paragraph
+
+
+nnnnnnn
+
+
+and this is something that needs
+.. rst-class:: fa fa-inbox
+    the fontawesome flag will be attached to inbox this paragraph

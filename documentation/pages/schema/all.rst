@@ -12,8 +12,8 @@ Use this API to get full details of settings for all defined repositories.
    - All parameters are passed through HTTP header fields.
    - Method: GET
 
-Example Usage
-~~~~~~~~~~~~~
+Usage
+-----
 
 .. code-block:: bash
 
@@ -70,7 +70,7 @@ Example Usage
 
 
 Request Headers
-~~~~~~~~~~~~~~~
+---------------
 
 *Client-Version*
 
