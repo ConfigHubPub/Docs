@@ -11,3 +11,4 @@ Defines RESTfull API Schema.
 
    schema/pull
    schema/push
+   schema/info

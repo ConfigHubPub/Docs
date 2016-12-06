@@ -10,5 +10,4 @@ The fastest way to evaluate ConfigHub is to use the
 .. toctree::
    :titlesonly:
 
-   getting_started/download
    getting_started/install
