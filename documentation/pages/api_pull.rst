@@ -30,7 +30,7 @@ Example Pull Request/Response
         -H "Files: demo.props"
 
 .. code-block:: json
-HTTP/1.1 200 OK
+   HTTP/1.1 200 OK
    Date: Fri, 10 Jun 2016 22:38:13 GMT
    Content-Type: application/json
    Content-Length: 2167
