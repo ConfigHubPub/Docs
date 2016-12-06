@@ -14,10 +14,11 @@ The ConfigHub server application has the following prerequisites:
 
 * Some modern Linux distribution (Debian Linux, Ubuntu Linux, or CentOS recommended)
 * MySQL 5.0 or later (latest stable version is recommended)
-* Oracle Java SE 8 or later (OpenJDK 8 also works; latest stable update is recommended)
+* Oracle Java SE 8 or later (latest stable update is recommended)
 
 
-1. Prerequisites
+Download and Install
+--------------------
 
     - Download and install Java8 to your local host, and set the environment variable
       JAVA_HOME to the location of the Java's bin directory.
@@ -28,19 +29,22 @@ The ConfigHub server application has the following prerequisites:
       tar -xzvf confighub-<version>.tar.gz
 
 
-2. Configuration
+Manual Configuration
+--------------------
 
     - Edit the configuration file "confighub.properties" in confighub-<version> directory.
     - Each configuration parameter has to be specified.
 
 
-3. License File
+ConfigHub License File
+----------------------
 
     - Place your license file "license.json" received from ConfigHub into the confighub-<version> directory
       (same directory as the confighub.properties file.)
 
 
-4. Starting / Stopping
+Starting and Stopping ConfigHub Service
+---------------------------------------
 
     - To start ConfigHub, run confighub-<version>/server/bin/startup.sh
     - To stop ConfigHub, run confighub-<version>/server/bin/shutdown.sh

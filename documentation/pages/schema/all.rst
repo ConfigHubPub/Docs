@@ -1,7 +1,7 @@
 .. _allRepos:
 
-All Repositories Info
-^^^^^^^^^^^^^^^^^^^^^
+Get All Repositories
+^^^^^^^^^^^^^^^^^^^^
 
 Use this API to get full details of settings for all defined repositories.
 
