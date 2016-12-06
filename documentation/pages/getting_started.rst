@@ -4,8 +4,8 @@
 Getting Started
 ***************
 
-The fastest way to evaluate ConfigHub is to use the online demo version.
-todo: Add demo line
+The fastest way to evaluate ConfigHub is to use the
+`hosted demo version <https://demo.confighub.com>`_
 
 .. toctree::
    :titlesonly:

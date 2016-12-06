@@ -1,6 +1,6 @@
-********
-PUSH Api
-********
+**********************
+Configuration PUSH API
+**********************
 
 Push API allows clients to update or create properties, context values and tags.
 
