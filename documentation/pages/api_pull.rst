@@ -1,14 +1,9 @@
-===============
-REST PULL Api
-===============
+========
+PULL Api
+========
 
-PULL API is used for a client to pull configuration from a ConfigHub server
-given a fully specified context.
-
-The Pull response may contain key-value pairs, as well as resolved files (as per request).
-
-Configuration PULL
-
+With fully specified context, pull configuration from ConfigHub service.
+The JSON response may contain key-value pairs, as well as resolved files (as per request).
 
 - API URL (with token):  ``https://confighub-api/rest/pull``
 - API URL (no token):  ``https://confighub-api/rest/pull/<account>/<repository>``
@@ -33,9 +28,14 @@ Example Pull Request/Response
         -H "Application-Name: myApp"           \
         -H "Client-Version: v1.5"              \
         -H "Files: demo.props"
-.. code-block:: json
 
-    {
+.. code-block:: json
+HTTP/1.1 200 OK
+   Date: Fri, 10 Jun 2016 22:38:13 GMT
+   Content-Type: application/json
+   Content-Length: 2167
+   Server: TomEE
+   {
       "generatedOn": "06/10/2016 22:38:13",
       "account": "ConfigHub",
       "repo": "Demo",
@@ -58,7 +58,7 @@ Example Pull Request/Response
           "val": "admin"
         }
       }
-    }
+   }
 
 
 
