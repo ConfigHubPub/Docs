@@ -76,15 +76,15 @@ Matching value to request context occurs in two steps:
    **Example**: Partial Context-Request resolution
 
    +-----------------+------------------+---------------+---------------+---------------+
-   |Request-Context  | Production, Test | *             | Webserver-Jim |               |
+   |Request-Context  | Production, Test | \*            | Webserver-Jim |               |
    +-----------------+------------------+---------------+---------------+---------------+
-   |Request-Context  | Production       | WebServer     | *             | Match         |
+   |Value-Context    | Production       | WebServer     | *             | Match         |
    +-----------------+------------------+---------------+---------------+---------------+
-   |Request-Context  | Production       | *             | *             | Match         |
+   |Value-Context    | Production       | *             | *             | Match         |
    +-----------------+------------------+---------------+---------------+---------------+
-   |Request-Context  | *                | *             | Webserver-Jim | Match         |
+   |Value-Context    | *                | *             | Webserver-Jim | Match         |
    +-----------------+------------------+---------------+---------------+---------------+
-   |Request-Context  | Development      | *             | *             | No Match      |
+   |Value-Context    | Development      | *             | *             | No Match      |
    +-----------------+------------------+---------------+---------------+---------------+
 
 
