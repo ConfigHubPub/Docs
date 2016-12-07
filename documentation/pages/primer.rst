@@ -78,13 +78,13 @@ Matching value to request context occurs in two steps:
    +-----------------+------------------+---------------+---------------+---------------+
    |Request-Context  | Production, Test | \*            | Webserver-Jim |               |
    +-----------------+------------------+---------------+---------------+---------------+
-   |Value-Context    | Production       | WebServer     | *             | Match         |
+   |Value-Context    | Production       | WebServer     | \*            | Match         |
    +-----------------+------------------+---------------+---------------+---------------+
-   |Value-Context    | Production       | *             | *             | Match         |
+   |Value-Context    | Production       | \*            | \*            | Match         |
    +-----------------+------------------+---------------+---------------+---------------+
-   |Value-Context    | *                | *             | Webserver-Jim | Match         |
+   |Value-Context    | \*               | \*            | Webserver-Jim | Match         |
    +-----------------+------------------+---------------+---------------+---------------+
-   |Value-Context    | Development      | *             | *             | No Match      |
+   |Value-Context    | Development      | \*            | \*            | No Match      |
    +-----------------+------------------+---------------+---------------+---------------+
 
 
