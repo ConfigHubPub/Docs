@@ -29,7 +29,8 @@ of a property.  By assigning a context to a property value, a single property ke
 each with a unique context signature.
 
 .. note::
-   **Traditional property definition**::property = key: value
+   **Traditional property definition**::
+      property = key: value
 
    **ConfigHub property definition**::
 
