@@ -54,10 +54,9 @@ specific security groups.
 
 .. code-block:: java
 
-    ConfigHub configHub = new ConfigHub(token, context)
-            .applicationName("HelloConfigApp")
-            .decryptSecurityGroup("dbPasswords", "db-pass-123")
-            .decryptSecurityGroup("keystore", "key-secret-0");
+    ConfigHub configHub = new ConfigHub(token, context).applicationName("HelloConfigApp")
+                                                       .decryptSecurityGroup("dbPasswords", "db-pass-123")
+                                                       .decryptSecurityGroup("keystore", "key-secret-0");
     CHProperties properties = configHub.getProperties();
 
 
@@ -93,7 +92,41 @@ You may choose to locally save your pulled configuration to a file. Configuratio
 
 .. code-block:: java
 
-    CHProperties properties = new ConfigHub(token, context)
-                    .applicationName("MyAppName")
-                    .getProperties();
+    CHProperties properties = new ConfigHub(token, context).applicationName("MyAppName").getProperties();
     properties.toFile("/path/to/backup/config.json");
+
+
+**The resulting JSON configuration file:**
+
+.. code-block:: json
+
+    {
+      "context": "Production;TimeKeeper",
+      "account": "ConfigHub",
+      "repo": "Demo",
+      "config": {
+        "db.name": {
+          "val": "ProdDatabase"
+        },
+        "db.user": {
+          "val": "admin"
+        },
+        ...
+        "db.password": {
+          "val": "prod-password"
+        }
+      }
+    }
+
+
+Reading properties from file
+----------------------------
+
+API provides an option to read configuration from a stored JSON file.
+
+.. code-block:: java
+
+    ConfigHub configHub = new ConfigHub(token, context);
+    // Load properties from file
+    CHProperties properties = configHub.getPropertiesFromFile("/path/to/config.json");
+
