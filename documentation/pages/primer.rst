@@ -28,14 +28,7 @@ In order to eliminate a mesh of configuration file and property duplication, Con
 of a property.  By assigning a context to a property value, a single property key can have multiple values,
 each with a unique context signature.
 
-   **ConfigHub property definition:**
-
-   .. math::
-
-      property = key: [ value + context_1,
-                        value + context_2,
-                        ...
-                      ]
+   :Definition: property = key: [ value + context_1, value + context_2, ... ]
 
 When an application/client requests configuration, they only need to specify their context.  Using a request
 context, the exact key-value pairing occurs, and the result is returned to the client.
@@ -85,16 +78,16 @@ Matching value to request context occurs in two steps:
    +---------------------+------------------+---------------+---------------+-----------------+
 
    +---------------------+------------------+---------------+---------------+-----------------+
+   | Value-Context       | :nb:`\*`         | :nb:`\*`      | Webserver-Jim | :sr:`Match`     |
+   +---------------------+------------------+---------------+---------------+-----------------+
    | Value-Context       | Production       | WebServer     | :nb:`\*`      | :sr:`Match`     |
    +---------------------+------------------+---------------+---------------+-----------------+
    | Value-Context       | Production       | :nb:`\*`      | :nb:`\*`      | :sr:`Match`     |
    +---------------------+------------------+---------------+---------------+-----------------+
-   | Value-Context       | :nb:`\*`         | :nb:`\*`      | Webserver-Jim | :sr:`Match`     |
-   +---------------------+------------------+---------------+---------------+-----------------+
    | Value-Context       | :gt:`Development`| :nb:`\*`      | :nb:`\*`      | :gt:`No Match`  |
    +---------------------+------------------+---------------+---------------+-----------------+
 
-
+   The same data in ConfigHub UI:
    .. image:: /images/semanticFilter.png
 
 
@@ -106,3 +99,32 @@ Matching value to request context occurs in two steps:
    As repository's context scope can vary in size (see Choosing Repository Context Scope), each of the context
    blocks is assigned specific weight. The widest scope specifications (left) carry less weight, while most
    specific parts (right) carry most weight.
+
+   For example, in a repository with 3 context hierarchies, weight is assigned as follows::
+
+      Environment [40] | Application [80] | Instance [160]
+
+
+   This repository might have a property defined with multiple values. Each value-context also has weight.
+
+   **Example**: Fully-Specified Request-Context resolution
+
+   +---------------------+----------------------------------------+-----------+---------------+
+   |                     | Context                                | Weight    | Result        |
+   +=====================+========================================+===========+===============+
+   | Request-Context     | Production > WebServer > Webserver-Jim |           |               |
+   +---------------------+----------------------------------------+-----------+---------------+
+
+   +---------------------+------------------+---------------+---------------+-----------------+
+   | Value-Context       | :nb:`\*`         | :nb:`\*`      | Webserver-Jim | :sr:`Match`     |
+   +---------------------+------------------+---------------+---------------+-----------------+
+   | Value-Context       | Production       | WebServer     | :nb:`\*`      | :sr:`Match`     |
+   +---------------------+------------------+---------------+---------------+-----------------+
+   | Value-Context       | Production       | :nb:`\*`      | :nb:`\*`      | :sr:`Match`     |
+   +---------------------+------------------+---------------+---------------+-----------------+
+   | Value-Context       | :gt:`Development`| :nb:`\*`      | :nb:`\*`      | :gt:`No Match`  |
+   +---------------------+------------------+---------------+---------------+-----------------+
+
+
+
+
