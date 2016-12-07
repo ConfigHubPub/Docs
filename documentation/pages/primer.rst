@@ -125,5 +125,6 @@ Matching value to request context occurs in two steps:
    +---------------------+------------------+---------------+---------------+-----------------+-----------------+
 
 
+   .. image:: /images/semanticFilter.png
 
 
