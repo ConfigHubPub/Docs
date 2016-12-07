@@ -54,9 +54,10 @@ specific security groups.
 
 .. code-block:: java
 
-    ConfigHub configHub = new ConfigHub(token, context).applicationName("HelloConfigApp")
-                                                       .decryptSecurityGroup("dbPasswords", "db-pass-123")
-                                                       .decryptSecurityGroup("keystore", "key-secret-0");
+    ConfigHub configHub = new ConfigHub(token, context)
+            .applicationName("HelloConfigApp")
+            .decryptSecurityGroup("dbPasswords", "db-pass-123")
+            .decryptSecurityGroup("keystore", "key-secret-0");
     CHProperties properties = configHub.getProperties();
 
 
@@ -90,15 +91,17 @@ Saving properties to file
 
 You may choose to locally save your pulled configuration to a file. Configuration is in JSON format.
 
-.. code-block:: java
+.. code-block::java
 
-    CHProperties properties = new ConfigHub(token, context).applicationName("MyAppName").getProperties();
+    CHProperties properties = new ConfigHub(token, context)
+            .applicationName("MyAppName")
+            .getProperties();
     properties.toFile("/path/to/backup/config.json");
 
 
 **The resulting JSON configuration file:**
 
-.. code-block:: json
+.. code-block::json
 
     {
       "context": "Production;TimeKeeper",
