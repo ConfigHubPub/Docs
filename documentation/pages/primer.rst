@@ -29,6 +29,7 @@ of a property.  By assigning a context to a property value, a single property ke
 each with a unique context signature.
 
    **ConfigHub property definition:**
+
    .. math::
 
       property = key: [ value + context_1,
