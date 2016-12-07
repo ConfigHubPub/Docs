@@ -11,7 +11,7 @@ permissions.
 
 To distribute this workload, organization let's you assign repository owners and administrators.
 
-To create an organization, once logged in:
+To create a new organization, once logged in:
 
 #. Click on the **New** link (top-right) and choose *Organization*
 #. Enter the Organization name, and save.
