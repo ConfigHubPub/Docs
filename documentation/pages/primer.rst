@@ -52,4 +52,36 @@ While a request with context ``Development`` would return::
    http.port: 8080
    http.redirect: 8443
 
+In this example, context is very simple - its composed with a single context hierarchy, Environment.  However,
+context can be as complex as your environment demands - up to 10 context element hierarchy.
 
+
+Context Resolution
+~~~~~~~~~~~~~~~~~~
+
+Context resolution is a process during which value-context of each key is compared to the request context in order
+to determine which properties should be returned.
+
+Matching value to request context occurs in two steps:
+
+1. Semantic Filter
+------------------
+
+   In this, first step, for each context block, corresponding context item from value and request are compared.
+   For a match, corresponding context items have to satisfy following rules:
+
+   * If both are specified, they have to be the same;
+   * Either or both are a wildcard.
+
+
+
+
+
+2. Weight Filter
+----------------
+
+   Weighted filter is only applied in case where request context specified is a fully-specified context.
+
+   As repository's context scope can vary in size (see Choosing Repository Context Scope), each of the context
+   blocks is assigned specific weight. The widest scope specifications (left) carry less weight, while most
+   specific parts (right) carry most weight.
