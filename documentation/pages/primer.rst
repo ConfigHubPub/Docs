@@ -73,17 +73,17 @@ Matching value to request context occurs in two steps:
    * If both are specified, they have to be the same;
    * Either or both are a wildcard.
 
-   **Example**: Partial Context-Request resolution
+   **Example**: Context-Request resolution
 
    +-----------------+------------------+---------------+---------------+---------------+
    |                 | Environment      | Application   | Instance      |               |
    +=================+==================+===============+===============+===============+
+
+   +-----------------+------------------+---------------+---------------+---------------+
    |Request-Context  | Production       | WebServer     | Webserver-Jim |               |
    +-----------------+------------------+---------------+---------------+---------------+
 
    +-----------------+------------------+---------------+---------------+---------------+
-   |                 | Environment      | Application   | Instance      |               |
-   +=================+==================+===============+===============+===============+
    |Value-Context    | Production       | WebServer     | \*            | Match         |
    +-----------------+------------------+---------------+---------------+---------------+
    |Value-Context    | Production       | \*            | \*            | Match         |
