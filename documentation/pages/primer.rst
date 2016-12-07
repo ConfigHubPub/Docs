@@ -28,14 +28,13 @@ In order to eliminate a mesh of configuration file and property duplication, Con
 of a property.  By assigning a context to a property value, a single property key can have multiple values,
 each with a unique context signature.
 
-.. note::
+   **ConfigHub property definition:**
+   .. math::
 
-   ConfigHub property definition:
-
-   | property = key: [ value + context_1,
-   |                   value + context_2,
-   |                   ...
-   |                 ]
+      property = key: [ value + context_1,
+                        value + context_2,
+                        ...
+                      ]
 
 When an application/client requests configuration, they only need to specify their context.  Using a request
 context, the exact key-value pairing occurs, and the result is returned to the client.
