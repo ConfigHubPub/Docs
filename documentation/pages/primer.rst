@@ -93,13 +93,13 @@ Matching value to request context occurs in two steps:
    +---------------------+------------------+---------------+---------------+-----------------+
 
    The semantic filter has matched 3 values, and ignored a single value because **Environment**
-   context hierarchy from Request-Context "Production" did not match values' :gt:`Development`.
+   context hierarchy from Request-Context "Production" did not match "Development".
 
 
 2. Weight Filter
 ----------------
 
-   Weighted filter is only applied in case where request context specified is a fully-specified context.
+   Weighted filter is only applied if Context-Request is fully-qualified (each context hierarchy is specified).
 
    As repository's context scope can vary in size (see Choosing Repository Context Scope), each of the context
    blocks is assigned specific weight. The widest scope specifications (left) carry less weight, while most
@@ -114,21 +114,19 @@ Matching value to request context occurs in two steps:
 
    **Example**: Fully-Specified Request-Context resolution
 
-   +---------------------+----------------------------------------+-----------+---------------+
-   |                     | Context                                | Weight    | Result        |
-   +=====================+========================================+===========+===============+
-   | Request-Context     | Production > WebServer > Webserver-Jim |           |               |
-   +---------------------+----------------------------------------+-----------+---------------+
+   +---------------------+------------------+---------------+---------------+-----------------+-----------------+
+   |                     | Environment      | Application   | Instance      | Weight          |                 |
+   +=====================+==================+===============+===============+=================+=================+
+   | Request-Context     | Production       | WebServer     | Webserver-Jim |                 |                 |
+   +---------------------+------------------+---------------+---------------+-----------------+-----------------+
 
-   +---------------------+------------------+---------------+---------------+-----------------+
-   | Value-Context       | :nb:`\*`         | :nb:`\*`      | Webserver-Jim | :sr:`Match`     |
-   +---------------------+------------------+---------------+---------------+-----------------+
-   | Value-Context       | Production       | WebServer     | :nb:`\*`      | :sr:`Match`     |
-   +---------------------+------------------+---------------+---------------+-----------------+
-   | Value-Context       | Production       | :nb:`\*`      | :nb:`\*`      | :sr:`Match`     |
-   +---------------------+------------------+---------------+---------------+-----------------+
-   | Value-Context       | :gt:`Development`| :nb:`\*`      | :nb:`\*`      | :gt:`No Match`  |
-   +---------------------+------------------+---------------+---------------+-----------------+
+   +---------------------+------------------+---------------+---------------+-----------------+-----------------+
+   | Value-Context       | :nb:`\*`         | :nb:`\*`      | Webserver-Jim | 160             | :sr:`Match`     |
+   +---------------------+------------------+---------------+---------------+-----------------+-----------------+
+   | Value-Context       | Production       | WebServer     | :nb:`\*`      | 40 + 80 = 120   |                 |
+   +---------------------+------------------+---------------+---------------+-----------------+-----------------+
+   | Value-Context       | Production       | :nb:`\*`      | :nb:`\*`      | 40              |                 |
+   +---------------------+------------------+---------------+---------------+-----------------+-----------------+
 
 
 
