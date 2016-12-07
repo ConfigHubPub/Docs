@@ -8,7 +8,8 @@ Java API provides full interface for configuration pull. In addition it adds sev
 `V1.0 JavaDoc <https://www.confighub.com/api/docs/Java/v1/index.html?com/confighub/client/ConfigHub.html>`_
 
 
-**Example usage of the API to pull properties and files**
+Usage
+-----
 
 .. code-block:: java
 
@@ -38,3 +39,61 @@ Java API provides full interface for configuration pull. In addition it adds sev
         files.writeFile("foo", "foo");
     }
 
+
+Decrypting values
+-----------------
+
+Values can be decrypted by either:
+#. Adding a security group to a token;
+#. Specifying security group name and password in the API call.
+
+Alternatively, you may also decrypting manually, as the value returned will be encrypted.
+
+This section explains the second option - when you want your application to specify the passwords to
+specific security groups.
+
+.. code-block:: java
+
+    ConfigHub configHub = new ConfigHub(token, context)
+            .applicationName("HelloConfigApp")
+            .decryptSecurityGroup("dbPasswords", "db-pass-123")
+            .decryptSecurityGroup("keystore", "key-secret-0");
+    CHProperties properties = configHub.getProperties();
+
+
+With the call from the example above, all values of keys assigned to security groups "dbPasswords" and
+"keystore" will be returned decrypted.
+
+
+Type defined properties
+-----------------------
+
+Property keys that have specified type are ready to use as per type definition. For example, a key with
+value type defined as Integer, can be processed either as an Integer or a String.
+
+.. code-block:: java
+
+    int dbPort = props.getInteger("db.port"); // as Integer
+    Long dbPort = props.getLong("db.port");   // or as Long
+    String dbPort = props.get("db.port");     // or as String
+
+Assigning to an incorrect type, for example a Boolean, will throw a ``ClassCastException``.
+
+
+Default property value
+----------------------
+
+Each value ``get(key, default)`` method call can optionally specify a default value.
+
+
+Saving properties to file
+-------------------------
+
+You may choose to locally save your pulled configuration to a file. Configuration is in JSON format.
+
+.. code-block:: java
+
+    CHProperties properties = new ConfigHub(token, context)
+                    .applicationName("MyAppName")
+                    .getProperties();
+    properties.toFile("/path/to/backup/config.json");
