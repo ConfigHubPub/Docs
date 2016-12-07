@@ -74,6 +74,7 @@ Matching value to request context occurs in two steps:
    * Either or both are a wildcard.
 
    .. role:: sx
+   .. role:: sr
 
 
    **Example**: Context-Request resolution
@@ -83,13 +84,14 @@ Matching value to request context occurs in two steps:
    +=====================+==================+===============+===============+=================+
    | **Request-Context** | Production       | WebServer     | Webserver-Jim |                 |
    +---------------------+------------------+---------------+---------------+-----------------+
-   | Value-Context       | Production       | WebServer     | \*            | Match           |
    +---------------------+------------------+---------------+---------------+-----------------+
-   | Value-Context       | Production       | \*            | \*            | Match           |
+   | Value-Context       | Production       | WebServer     | :sx:`\*`      | :sr:`Match`     |
    +---------------------+------------------+---------------+---------------+-----------------+
-   | Value-Context       | \*               | \*            | Webserver-Jim | Match           |
+   | Value-Context       | Production       | :sx:`\*`      | :sx:`\*`      | :sr:`Match`     |
    +---------------------+------------------+---------------+---------------+-----------------+
-   | Value-Context       | Development      | \*            | :sx:`\*`      | :sx:`No Match`  |
+   | Value-Context       | :sx:`\*`         | :sx:`\*`      | Webserver-Jim | :sr:`Match`     |
+   +---------------------+------------------+---------------+---------------+-----------------+
+   | Value-Context       | Development      | :sx:`\*`      | :sx:`\*`      | No Match        |
    +---------------------+------------------+---------------+---------------+-----------------+
 
 
