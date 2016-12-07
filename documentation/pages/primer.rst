@@ -90,7 +90,7 @@ Matching value to request context occurs in two steps:
    +-----------------+------------------+---------------+---------------+---------------+
    |Value-Context    | \*               | \*            | Webserver-Jim | Match         |
    +-----------------+------------------+---------------+---------------+---------------+
-   |Value-Context    | Development      | \*            | \*            | No Match      |
+   |Value-Context    | Development      | \*            | \*            | :wy-text-danger:`No Match`      |
    +-----------------+------------------+---------------+---------------+---------------+
 
 
