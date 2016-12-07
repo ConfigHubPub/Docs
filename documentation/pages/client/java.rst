@@ -5,14 +5,17 @@ Java Client API
 
 Java API provides full interface for configuration pull. In addition it adds several convenience utilities.
 
+`V1.0 JavaDoc <https://www.confighub.com/api/docs/Java/v1/index.html?com/confighub/client/ConfigHub.html>`_
 
+
+**Example usage of the API to pull properties and files**
 
 .. code-block:: java
 
     public static void main(String... args)
     {
         String token = "..."
-        String context = "Production;Application;Instance";
+        String context = "Production;WebServer;WebServer-Jim";
         ConfigHub configHub = new ConfigHub(token, context)
                 .applicationName("HelloConfigApp");
 
