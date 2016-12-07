@@ -12,10 +12,11 @@ A repository can be owned by either a personal account, or an organization.
 To create a new repository, once logged in:
 
 #. Click on the **New** link (top-right) and choose *Repository*
-#. Choose the owner account and enter the repository name.  Repository description is optional.
+#. Choose the owner account and enter the repository name.  *Description is optional*
+#. Choose and label your context, and save.
+
 
 .. _choosing_context:
-
 
 Choosing Repository Context
 ---------------------------
@@ -42,7 +43,7 @@ yes to all of them, your labeled context should look like this:
 
 
 Context Hierarchy Order
-~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 Context is defined in the order of precedence. From the widest scope (left), to the
 narrowest scope (right) - similar to the way you would narrow in on a general specification.
