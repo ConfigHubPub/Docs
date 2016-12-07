@@ -73,8 +73,19 @@ Matching value to request context occurs in two steps:
    * If both are specified, they have to be the same;
    * Either or both are a wildcard.
 
+   **Example**: Partial Context-Request resolution
 
-
+   +-----------------+------------------+---------------+---------------+---------------+
+   |Request-Context  | Production, Test | *             | Webserver-Jim |               |
+   +-----------------+------------------+---------------+---------------+---------------+
+   |Request-Context  | Production       | WebServer     | *             | Match         |
+   +-----------------+------------------+---------------+---------------+---------------+
+   |Request-Context  | Production       | *             | *             | Match         |
+   +-----------------+------------------+---------------+---------------+---------------+
+   |Request-Context  | *                | *             | Webserver-Jim | Match         |
+   +-----------------+------------------+---------------+---------------+---------------+
+   |Request-Context  | Development      | *             | *             | No Match      |
+   +-----------------+------------------+---------------+---------------+---------------+
 
 
 2. Weight Filter
