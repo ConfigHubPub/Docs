@@ -130,3 +130,27 @@ API provides an option to read configuration from a stored JSON file.
     // Load properties from file
     CHProperties properties = configHub.getPropertiesFromFile("/path/to/config.json");
 
+The config file has to have a context key defined in the JSON object root that matches the requested context.
+If contexts are not the same, API throws ``ConfigHubException``.
+
+
+Pulling resolved files from repository
+--------------------------------------
+
+You may also pull files with ConfigHub variables substituted for resolved property values through the API.
+
+.. code-block:: java
+
+    ConfigHub configHub = new ConfigHub(token, context);
+    configHub.requestFile("conf.properties");
+    configHub.requestFile("server.xml");
+    configHub.requestFile("log4j2.xml");
+
+    // Pull files from ConfigHub
+    CHFiles files = configHub.getFiles();
+
+    // Get file content as a String
+    String confProps = files.get("conf.properties");
+
+    // Or save them to a local file
+    files.writeFile("log4j2.xml", "/path/to/log4j2.xml");
