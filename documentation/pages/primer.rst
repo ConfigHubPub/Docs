@@ -61,8 +61,8 @@ Matching value to request context occurs in two steps:
 1. Semantic Filter
 ------------------
 
-   In this, first step, for each context block, corresponding context item from value and request are compared.
-   For a match, corresponding context items have to satisfy following rules:
+   For each context hierarchy, corresponding context-values from request and property are compared.
+   For a match, corresponding context values have to satisfy following rules:
 
    * If both are specified, they have to be the same;
    * Either or both are a wildcard.
@@ -73,6 +73,8 @@ Matching value to request context occurs in two steps:
 
 
    **Example**: Context-Request resolution
+
+   Assume a context property is defined with for a key ``logger.level`` with 4 values.
 
    +---------------------+------------------+---------------+---------------+-----------------+
    |                     | Environment      | Application   | Instance      |                 |
@@ -90,8 +92,8 @@ Matching value to request context occurs in two steps:
    | Value-Context       | :gt:`Development`| :nb:`\*`      | :nb:`\*`      | :gt:`No Match`  |
    +---------------------+------------------+---------------+---------------+-----------------+
 
-   The same data in ConfigHub UI:
-   .. image:: /images/semanticFilter.png
+   The semantic filter has matched 3 values, and ignored a single value because **Environment**
+   context hierarchy from Request-Context "Production" did not match values' :gt:`Development`.
 
 
 2. Weight Filter
