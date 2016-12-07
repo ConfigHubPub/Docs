@@ -19,3 +19,20 @@ Therefore, the merged configuration could be written as::
     <Connector port="${ http.port }" redirectPort="${ http.redirect }"/>
 
 And we have our two properties:  ``http.port`` and ``http.redirect``.
+
+
+Context Properties
+~~~~~~~~~~~~~~~~~~
+
+This is where ConfigHub steps in, and change a traditional definition of a property.
+
+.. note:: Traditional property definition
+   property = key: value
+
+.. note:: ConfigHub property definition
+   property = key: [
+                      value + context1,
+                      value + context2,
+                      ...
+                   ]
+
