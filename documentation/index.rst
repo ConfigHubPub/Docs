@@ -16,7 +16,8 @@ programmatically or through the web-based user interface.
    :caption: ConfigHub
 
    pages/primer
-   pages/schema
    pages/getting_started
+   pages/schema
+   pages/clients
 
 
