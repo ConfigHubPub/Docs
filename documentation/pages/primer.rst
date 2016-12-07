@@ -27,13 +27,15 @@ Context Properties
 This is where ConfigHub steps in, and change a traditional definition of a property.
 
 .. note::
-   **Traditional property definition**
-   ``property = key: value``
+   **Traditional property definition**::
 
-   **ConfigHub property definition**
-   ``property = key: [
-                      value + context1,
-                      value + context2,
-                      ...
-                   ]``
+      property = key: value
 
+
+   **ConfigHub property definition**::
+
+      property = key: [
+                        value + context1,
+                        value + context2,
+                        ...
+                     ]
