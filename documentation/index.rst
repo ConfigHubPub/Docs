@@ -10,20 +10,13 @@ ConfigHub is a platform for software configuration.  Configuration is managed
 programmatically or through the web-based user interface.
 
 
-Let's start with a ConfigHub primer.
-
-.. toctree::
-   :maxdepth: 2
-
-   pages/primer
-
-
 
 .. toctree::
    :maxdepth: 2
    :caption: ConfigHub
 
-   pages/getting_started
+   pages/primer
    pages/schema
+   pages/getting_started
 
 

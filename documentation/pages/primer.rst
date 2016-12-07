@@ -1,7 +1,7 @@
 .. _primer:
 
-ConfigHub Primer
-^^^^^^^^^^^^^^^^
+Basic ConfigHub Concepts
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 All configuration can be boiled down to key-value pairs (properties).  Ignoring the format
 that surrounds various configuration components, configuration differences are always reduced to properties.

@@ -1,8 +1,8 @@
 .. _gettingstarted:
 
-***************
-Getting Started
-***************
+**********************
+Installation and Setup
+**********************
 
 The fastest way to evaluate ConfigHub is to use the
 `hosted demo version <https://demo.confighub.com>`_.
