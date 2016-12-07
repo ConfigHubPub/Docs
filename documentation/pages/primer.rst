@@ -30,6 +30,7 @@ each with a unique context signature.
 
 .. note::
    **Traditional property definition**::
+
       property = key: value
 
    **ConfigHub property definition**::
@@ -72,8 +73,9 @@ Matching value to request context occurs in two steps:
    * If both are specified, they have to be the same;
    * Either or both are a wildcard.
 
-   .. role:: sx
+   .. role:: nb
    .. role:: sr
+   .. role:: gt
 
 
    **Example**: Context-Request resolution
@@ -81,17 +83,17 @@ Matching value to request context occurs in two steps:
    +---------------------+------------------+---------------+---------------+-----------------+
    |                     | Environment      | Application   | Instance      |                 |
    +=====================+==================+===============+===============+=================+
-   | **Request-Context** | Production       | WebServer     | Webserver-Jim |                 |
+   | Request-Context     | Production       | WebServer     | Webserver-Jim |                 |
    +---------------------+------------------+---------------+---------------+-----------------+
 
    +---------------------+------------------+---------------+---------------+-----------------+
-   | Value-Context       | Production       | WebServer     | :sx:`\*`      | :sr:`Match`     |
+   | Value-Context       | Production       | WebServer     | :nb:`\*`      | :sr:`Match`     |
    +---------------------+------------------+---------------+---------------+-----------------+
-   | Value-Context       | Production       | :sx:`\*`      | :sx:`\*`      | :sr:`Match`     |
+   | Value-Context       | Production       | :nb:`\*`      | :nb:`\*`      | :sr:`Match`     |
    +---------------------+------------------+---------------+---------------+-----------------+
-   | Value-Context       | :sx:`\*`         | :sx:`\*`      | Webserver-Jim | :sr:`Match`     |
+   | Value-Context       | :nb:`\*`         | :nb:`\*`      | Webserver-Jim | :sr:`Match`     |
    +---------------------+------------------+---------------+---------------+-----------------+
-   | Value-Context       | Development      | :sx:`\*`      | :sx:`\*`      | No Match        |
+   | Value-Context       | :gt:`Development`| :nb:`\*`      | :nb:`\*`      | :gt:`No Match`  |
    +---------------------+------------------+---------------+---------------+-----------------+
 
 
