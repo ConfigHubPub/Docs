@@ -73,6 +73,8 @@ Matching value to request context occurs in two steps:
    * If both are specified, they have to be the same;
    * Either or both are a wildcard.
 
+.. role:: sx
+
    **Example**: Context-Request resolution
 
    +-----------------+------------------+---------------+---------------+---------------+
@@ -90,7 +92,7 @@ Matching value to request context occurs in two steps:
    +-----------------+------------------+---------------+---------------+---------------+
    |Value-Context    | \*               | \*            | Webserver-Jim | Match         |
    +-----------------+------------------+---------------+---------------+---------------+
-   |Value-Context    | Development      | \*            | \*            | :wy-text-danger:`No Match`      |
+   |Value-Context    | Development      | \*            | \*            | :sx:`No Match`|
    +-----------------+------------------+---------------+---------------+---------------+
 
 
