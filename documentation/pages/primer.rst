@@ -29,10 +29,10 @@ of a property.  By assigning a context to a property value, a single property ke
 each with a unique context signature.
 
 .. note::
-   **Traditional property definition**
+   **Traditional property**:
    ``property = key: value``
 
-   **ConfigHub property definition**::
+   **ConfigHub property**:
    ``property = key: [ value + context_1, value + context_2, ... ]``
 
 When an application/client requests configuration, they only need to specify their context.  Using a request
