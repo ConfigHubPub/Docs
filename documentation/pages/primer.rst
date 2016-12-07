@@ -24,18 +24,34 @@ And we have our two properties:  ``http.port`` and ``http.redirect``.
 Context Properties
 ~~~~~~~~~~~~~~~~~~
 
-This is where ConfigHub steps in, and change a traditional definition of a property.
+In order to eliminate a mesh of configuration file and property duplication, ConfigHub changes the definition
+of a property.  By assigning a context to a property value, a single property key can have multiple values,
+each with a unique context signature.
 
 .. note::
    **Traditional property definition**::
 
       property = key: value
 
-
    **ConfigHub property definition**::
 
       property = key: [
-                        value + context1,
-                        value + context2,
+                        value + context_1,
+                        value + context_2,
                         ...
                      ]
+
+When an application/client requests configuration, they only need to specify their context.  Using a request
+context, the exact key-value pairing occurs, and the result is returned to the client.
+
+Using example above, a request context ``Production`` would return::
+
+   http.port: 80
+   http.redirect: 443
+
+While a request with context ``Development`` would return::
+
+   http.port: 8080
+   http.redirect: 8443
+
+
