@@ -91,7 +91,7 @@ Saving properties to file
 
 You may choose to locally save your pulled configuration to a file. Configuration is in JSON format.
 
-.. code-block::java
+.. code-block:: java
 
     CHProperties properties = new ConfigHub(token, context)
             .applicationName("MyAppName")
@@ -101,7 +101,7 @@ You may choose to locally save your pulled configuration to a file. Configuratio
 
 **The resulting JSON configuration file:**
 
-.. code-block::json
+.. code-block:: json
 
     {
       "context": "Production;TimeKeeper",
