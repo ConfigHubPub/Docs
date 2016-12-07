@@ -17,8 +17,10 @@ To create a new repository, once logged in:
 .. _choosing_context:
 
 
-Choosing Repository Context / Modeling Application Environment
---------------------------------------------------------------
+Choosing Repository Context
+---------------------------
+
+When deciding on a repository context, you are essentially modeling your environments.
 
 There are several factors you will need to consider when choosing the context scope for your
 repository. Are you running multiple independent projects, do you have different
@@ -33,10 +35,9 @@ To help you determine the right scope, answering these questions might help:
 * Do you have multiple applications?
 * Are you running multiple instances (with different configuration) of your applications?
 
-Each time you answered yes, your context scope grew by factor of one. And if you did answer yes to all of them, your labeled context should look like this:  Environment | Application | Instance
-
-Beyond this, your context might grow if you have more than one unique development
-platform, and/or if there are more than one enterprise.
+Each time you answered yes, your context scope grew by factor of one. And if you did answer
+yes to all of them, your labeled context should look like this:
+``Environment | Application | Instance``.
 
 
 
