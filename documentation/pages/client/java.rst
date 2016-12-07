@@ -1,7 +1,7 @@
 .. _java_client:
 
-Java Client API
-^^^^^^^^^^^^^^^
+Java
+^^^^
 
 Java API provides full interface for configuration pull. In addition it adds several convenience utilities.
 
