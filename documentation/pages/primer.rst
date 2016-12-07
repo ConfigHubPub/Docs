@@ -124,6 +124,9 @@ Matching value to request context occurs in two steps:
    | Value-Context       | Production       | :nb:`\*`      | :nb:`\*`      | 40              |                 |
    +---------------------+------------------+---------------+---------------+-----------------+-----------------+
 
+   The value with the highest `weight` is matched, as it is the most relevant value for the given context request.
+
+   Here's the ConfigHub property editor view of the same property - with the values expanded.
 
    .. image:: /images/semanticFilter.png
 
