@@ -5,7 +5,8 @@ Java
 
 Java API provides full interface for configuration pull. In addition it adds several convenience utilities.
 
-`V1.0 JavaDoc <https://www.confighub.com/api/docs/Java/v1/index.html?com/confighub/client/ConfigHub.html>`_
+`Download Java Client API <https://www.confighub.com/download>`_, read the
+`V1.0 JavaDoc <https://www.confighub.com/api/docs/Java/v1/index.html?com/confighub/client/ConfigHub.html>`_.
 
 
 Usage
