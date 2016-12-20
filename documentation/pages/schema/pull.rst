@@ -139,11 +139,3 @@ Request Headers
   If value is ``true`` key-value pairs are not returned. This is useful if you are only interested in
   pulling files, and want to make transaction more efficient.
 
-
-
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="//www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
