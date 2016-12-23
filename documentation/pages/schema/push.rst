@@ -24,9 +24,10 @@ Usage
         -H "Client-Version: v1.5" \
         -H "Application-Name: myApp" \
         -X POST -d '
+        {
            "changeComment": Adding a new key and value",
            "enableKeyCreation": true,
-           "data":'[
+           "data": [
                      {
                        "key": "propertyKey",
                        "readme": "",
@@ -48,7 +49,8 @@ Usage
                          }
                        ]
                      }
-                   ]'
+                   ]
+          }'
 .. code-block:: bash
 
    Successful Response:
