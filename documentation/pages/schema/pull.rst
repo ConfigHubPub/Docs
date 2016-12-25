@@ -13,6 +13,7 @@ The JSON response may contain key-value pairs, as well as resolved files (as per
 .. note:: - All data returned is in JSON format.
    - All dates are expected and returned in ``ISO 8601`` format (UTC): ``YYYY-MM-DDTHH:MM:SSZ``.
    - All parameters are passed through HTTP header fields.
+   - Returned data will contain resolved properties and files, unless limited by the ``No-Properties`` or ``No-Files`` flags.
    - Method: GET
 
 
@@ -25,8 +26,7 @@ Usage
         -H "Client-Token: <token>"             \
         -H "Context: <context>"                \
         -H "Application-Name: myApp"           \
-        -H "Client-Version: v1.5"              \
-        -H "Files: demo.props"
+        -H "Client-Version: v1.5"
 
 .. code-block:: json
 
@@ -81,11 +81,6 @@ Request Headers
    -H "Context:  Production;MyApp;MyAppInstance "
 
 
-*Files*
-
-   Comma separated list of file names from the repository. Files are returned as a JSON Object, with file
-   name as a key, and resolved file content as value.
-
 *Repository-Date*
 
    ISO 8601 date format (UTC) ``YYYY-MM-DDTHH:MM:SSZ`` lets you specify a point in time for which to pull
@@ -138,4 +133,9 @@ Request Headers
 
   If value is ``true`` key-value pairs are not returned. This is useful if you are only interested in
   pulling files, and want to make transaction more efficient.
+
+*No-Files*
+
+  If value is ``true`` resolved files are not returned. This is useful if you are only interested in
+  pulling properties, and want to make transaction more efficient.
 
