@@ -44,6 +44,7 @@ Manual Configuration
    db.main.name = ConfigHub
    db.main.username =
    db.main.password =
+   db.main.useSSL = false
 
    # Settings for the database that will store all incoming client (API) requests.
    db.api.host = 127.0.0.1
@@ -51,6 +52,7 @@ Manual Configuration
    db.api.name = ConfigHubClientRequests
    db.api.username =
    db.api.password =
+   db.api.useSSL = false
 
    # Path to the location where all ConfigHub service logs are stored.
    confighub.logging.path = /var/log/confighub
@@ -72,8 +74,11 @@ Manual Configuration
 ConfigHub License File
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Place your license file "license.json" received from ConfigHub into the confighub-<version> directory
-(same directory as the confighub.properties file.)
+If you are using a Free ConfigHub version, you do not need a license file.
+
+For Enterprise license holders, place your license file "license.json" received from ConfigHub into the
+confighub-<version> directory (same directory as the confighub.properties file.)
+
 
 
 
