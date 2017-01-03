@@ -25,7 +25,7 @@ Usage
         -H "Application-Name: myApp" \
         -X POST -d '
         {
-           "changeComment": Adding a new key and value",
+           "changeComment": "Adding a new key and value",
            "enableKeyCreation": true,
            "data": [
                      {
