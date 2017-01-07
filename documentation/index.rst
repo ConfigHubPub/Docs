@@ -17,6 +17,7 @@ programmatically or through the web-based user interface.
 
    pages/primer
    pages/getting_started
+   pages/properties
    pages/schema
    pages/clients
 
