@@ -1,8 +1,8 @@
 .. _properties:
 
-*****************
-Config Properties
-*****************
+**************************
+Managing Config Properties
+**************************
 
 
 .. toctree::
