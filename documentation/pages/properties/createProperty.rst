@@ -3,4 +3,4 @@
 Creating properties and adding values
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Here's some filler text...
+.. image:: /images/propertiesToolbar.png
