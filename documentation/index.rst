@@ -13,11 +13,23 @@ programmatically or through the web-based user interface.
 
 .. toctree::
    :maxdepth: 2
-   :caption: ConfigHub
+   :caption: ConfigHub Primer and Installation
 
    pages/primer
    pages/getting_started
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Managing Configuration
+
    pages/properties
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: API Schema and Usage
+
    pages/schema
    pages/clients
 
