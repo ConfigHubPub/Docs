@@ -1,8 +1,8 @@
 .. _gettingstarted:
 
-****************************************************************
-Managing configuration properties (key-value), and their context
-****************************************************************
+*****************
+Config Properties
+*****************
 
 
 .. toctree::
