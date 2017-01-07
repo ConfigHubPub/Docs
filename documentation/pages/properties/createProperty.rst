@@ -1,6 +1,6 @@
-.. _editingProperty:
+.. _createProperty:
 
-Creating new properties and adding values
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Creating properties and adding values
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 

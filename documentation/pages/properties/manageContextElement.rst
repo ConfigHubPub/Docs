@@ -1,4 +1,4 @@
-.. _editingProperty:
+.. _manageContextElement:
 
 Managing context elements
 ^^^^^^^^^^^^^^^^^^^^^^^^^

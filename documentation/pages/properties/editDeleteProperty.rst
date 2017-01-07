@@ -1,4 +1,4 @@
-.. _editingProperty:
+.. _editDeleteProperty:
 
 Editing and deleting properties
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
