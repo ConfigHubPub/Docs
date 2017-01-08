@@ -49,7 +49,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'ConfigHub'
-copyright = u'2016, ConfigHub LLC.'
+copyright = u'2017, ConfigHub LLC.'
 author = u'ConfigHub Support'
 
 # The version info for the project you're documenting, acts as replacement for
