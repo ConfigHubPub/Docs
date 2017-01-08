@@ -20,16 +20,20 @@ programmatically or through the web-based user interface.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Configuration Editor
-
-   pages/properties
-
-
-.. toctree::
-   :maxdepth: 2
    :caption: API Schema and Usage
 
    pages/schema
    pages/clients
+
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Configuration Management
+
+   pages/properties
+   pages/files
+
+
+
 
 
