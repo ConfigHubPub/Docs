@@ -1,7 +1,7 @@
 .. _install:
 
-Local ConfigHub Installation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Installation
+^^^^^^^^^^^^
 
 
 .. _system-requirements:

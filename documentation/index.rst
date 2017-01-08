@@ -9,16 +9,12 @@ Welcome to ConfigHub documentation
 ConfigHub is a platform for software configuration.  Configuration is managed
 programmatically or through the web-based user interface.
 
-.. toctree::
-   :maxdepth: 2
-
-      pages/primer
-
 
 .. toctree::
    :maxdepth: 2
-   :caption: Installation
+   :caption: Overview and Installation
 
+   pages/primer
    pages/getting_started
 
 
