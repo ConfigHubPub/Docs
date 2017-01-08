@@ -24,11 +24,9 @@ programmatically or through the web-based user interface.
 
    pages/schema
 
-
-APIs on GitHub:
-
-- [Java](https://github.com/ConfigHubPub/JavaAPI)
-- [Python](https://github.com/ConfigHubPub/PythonAPI)
+   APIs on GitHub:
+   - `Java <https://github.com/ConfigHubPub/JavaAPI>`
+   - `Python <https://github.com/ConfigHubPub/PythonAPI>`
 
 
 
