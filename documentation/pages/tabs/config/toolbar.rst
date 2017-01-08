@@ -1,7 +1,7 @@
-.. _propertiesEditor:
+.. _propertiesToolbar:
 
-Properties editor
-^^^^^^^^^^^^^^^^^
+Editor toolbar
+^^^^^^^^^^^^^^
 
 Properties editor is the default view of ConfigHub UI where all/resolved properties are managed.
 The properties toolbar allows provides following functionality:
