@@ -24,7 +24,7 @@ Following sections show how context properties and context elements are created,
 .. toctree::
     :titlesonly:
 
-    properties/propertiesEditor
-    properties/createProperty
-    properties/editDeleteProperty
-    properties/manageContextElement
+    toolbar
+    createProperty
+    editDeleteProperty
+    manageContextElement

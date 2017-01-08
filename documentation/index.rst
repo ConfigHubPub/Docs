@@ -34,7 +34,7 @@ APIs on GitHub:
    :maxdepth: 3
    :caption: UI Configuration Management
 
-   pages/properties
+   pages/tabs/config/properties
 
 
 
