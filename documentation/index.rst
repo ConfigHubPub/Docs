@@ -30,6 +30,13 @@ APIs on GitHub:
 
 
 
+.. toctree::
+   :maxdepth: 3
+   :caption: UI Configuration Management
+
+   pages/properties
+
+
 
 
 
