@@ -24,9 +24,9 @@ programmatically or through the web-based user interface.
 
    pages/schema
 
-   APIs:
-   - [Java](https://github.com/ConfigHubPub/JavaAPI) | [JavaDoc](https://www.confighub.com/api/docs/Java/v1.3.0/index.html?com/confighub/client/ConfigHub.html)
-   - [Pythod](https://github.com/ConfigHubPub/PythonAPI)
+APIs:
+- [Java](https://github.com/ConfigHubPub/JavaAPI) | [JavaDoc](https://www.confighub.com/api/docs/Java/v1.3.0/index.html?com/confighub/client/ConfigHub.html)
+- [Pythod](https://github.com/ConfigHubPub/PythonAPI)
 
 
 .. toctree::
