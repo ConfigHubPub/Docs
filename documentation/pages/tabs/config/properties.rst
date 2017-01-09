@@ -55,7 +55,7 @@ The properties toolbar allows provides following functionality:
     This button toggles the new property form, where a new or existing key can be specified as well as a property value.
 
 4. **Comparison View**
-    Comparison view is a side-by-side view of the properties from either/or different contexts or time/tag.
+    Side-by-side comparison of resolved properties from any combination of contexts, times or tags.
 
 5. **All key toggle**
     Let's you see all property keys.  If some keys did not resolve values as per the specified context #1, these
@@ -63,9 +63,17 @@ The properties toolbar allows provides following functionality:
     their values are still left out of the view.
 
 6. **Key sort order**
+    Keys are sorted alphabetically.  Sort order toggles direction.
 
 7. **Value context alignment**
     To see all value contexts aligned as a table view, toggle this button.
 
 8. **Pagination navigation**
     Move between pages of results.
+
+
+
+Create a new Property
+^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: /images/newProperty.png
