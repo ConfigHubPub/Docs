@@ -31,6 +31,7 @@ The properties toolbar allows provides following functionality:
 
 
 1. **Context selection**
+
     These fields allow you to set the working context, and view configuration that is "resolved" by that context.
     Unlike the context requested by the client, editor context can have multiple context elements specified in
     a single context hierarchy.
@@ -44,6 +45,7 @@ The properties toolbar allows provides following functionality:
 
 
 2. **Search type**
+
     Searching keys, comments or values, may return results either among the resolved values (as indicated by
     specified context #1), or among all configuration properties in this repository.
 
@@ -52,28 +54,37 @@ The properties toolbar allows provides following functionality:
 
 
 3. **New property**
+
     This button toggles the new property form, where a new or existing key can be specified as well as a property value.
 
 4. **Comparison View**
+
     Side-by-side comparison of resolved properties from any combination of contexts, times or tags.
 
 5. **All key toggle**
+
     Let's you see all property keys.  If some keys did not resolve values as per the specified context #1, these
     keys will not be shown in the properties editor.  Clicking this key, will include them in the display, but
     their values are still left out of the view.
 
 6. **Key sort order**
+
     Keys are sorted alphabetically.  Sort order toggles direction.
 
 7. **Value context alignment**
+
     To see all value contexts aligned as a table view, toggle this button.
 
 8. **Pagination navigation**
+
     Move between pages of results.
 
 
 
-Create a new Property
+
+
+
+Create a new property
 ^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: /images/newProperty.png
@@ -114,3 +125,11 @@ Create a new Property
     entered here will be visible next to the change in the *Revisions* tab.
 
 
+
+
+
+
+Add value to existing key
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: /images/entry.png
