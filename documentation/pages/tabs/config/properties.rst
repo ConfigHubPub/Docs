@@ -90,6 +90,27 @@ Create a new Property
 
     - **Push:** If enabled, this key and its values may be modified via PUSH API.
 
-3. **Key** Property key is unique in a repository.  It may have
+3. **Key**
+
+    Property key is unique per repository.  Specifying a key that is already defined, will just add new value to the
+    existing key.  **Deprecated** flag can be enabled for a key.  If enabled, client PULL response JSON will include
+    a deprecated flag on the key object.  Use this flag to log all deprecated key usages.
+
+4. **Value**
+
+    Value for this key.  If *Type* (key attribute) flag is specified, value input field is changed in consideration of
+    the value type.
+
+5. **Context**
+
+    Each key's value has to have a unique context.  Having a unique context guarantees that a fully-specified-context,
+    as requested by the client applications, can only receive back a single value per key.
+
+    Each context's hierarchy may contain a wildcard or a single context element.
+
+6. **Save or Save with change comments**
+
+    Clicking on a talk-bubble button next to the "Save property" will pop-open a "Change comment" text box.  Comments
+    entered here will be visible next to the change in the *Revisions* tab.
 
 
