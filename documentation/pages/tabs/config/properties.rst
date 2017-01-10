@@ -136,7 +136,7 @@ Mousing over the existing key, attributes or values, shows additional options fo
 
 .. image:: /images/entry.png
 
-Choose *New value* will open a new value form.
+Choosing *New value* will open a new value form.
 
 .. image:: /images/newValue.png
 
