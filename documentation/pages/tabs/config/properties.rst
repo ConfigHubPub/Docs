@@ -77,3 +77,19 @@ Create a new Property
 ^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: /images/newProperty.png
+
+1. **Readme**
+
+    Comment for the property key.  Visible and searchable in property editor.
+
+2. **Key Attributes**
+
+    - **Type:** Refers to the data type of values.  When a non-Text value is selected, this value type is enforced in the UI,
+    and the type information is included in the JSON API response.
+    - **Security:** Chose pre created *Security Group*.  All values assigned to the key will adhere to access controls
+    set by the Security Group, and will be encrypted as per Security Group settings.
+    - **Push:** If enabled, this key and its values may be modified via PUSH API.
+
+3. **Key** Property key is unique in a repository.  It may have
+
+
