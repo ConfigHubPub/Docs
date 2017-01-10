@@ -1,7 +1,8 @@
 .. _info:
 
-Repository Info
-^^^^^^^^^^^^^^^
+****
+INFO
+****
 
 This API provides information about a specific repository.  It allows for glob syntax search of
 configuration files, and context definition.

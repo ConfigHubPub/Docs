@@ -1,7 +1,8 @@
 .. _system:
 
-System Information
-^^^^^^^^^^^^^^^^^^
+*************
+System Status
+*************
 
 API returns details of ConfigHub License and version.
 
