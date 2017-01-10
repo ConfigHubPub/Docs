@@ -132,4 +132,14 @@ Create a new property
 Add value to existing key
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Mousing over the existing key, attributes or values, shows additional options for the key.
+
 .. image:: /images/entry.png
+
+Choose *New value* will open a new value form.
+
+.. image:: /images/newValue.png
+
+The value's form elements are the same as specified in `Create a new property`_ section.
+Additional option is the **Active** toggle.  When a value is *Disabled*, it is treated as if it is deleted.
+a *Disabled* value is never returned to the client.
