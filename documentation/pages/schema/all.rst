@@ -1,5 +1,3 @@
-.. _allRepos:
-
 ************
 Repositories
 ************
