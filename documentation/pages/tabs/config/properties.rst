@@ -1,8 +1,8 @@
 .. _properties:
 
-**********
-Properties
-**********
+*****************
+Properties Editor
+*****************
 
 Properties are traditionally defined as:::
 
@@ -142,4 +142,16 @@ Choosing *New value* will open a new value form.
 
 The value's form elements are the same as specified in `Create a new property`_ section.
 Additional option is the **Active** toggle.  When a value is *Disabled*, it is treated as if it is deleted.
-a *Disabled* value is never returned to the client.
+A *Disabled* value is never returned to the client.
+
+
+
+Editing keys and values
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Double clicking on a key or a value, will open the editing form for either key or a value.
+You can also click on *Edit key* from the key's *options* menu.  Clicking the right array next to the value
+will also trigger the value form.
+
+
+
