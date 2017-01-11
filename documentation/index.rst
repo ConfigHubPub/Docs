@@ -20,9 +20,13 @@ programmatically or through the web-based user interface.
 
 .. toctree::
    :maxdepth: 2
-   :caption: API Schema and Usage
+   :caption: Schema and API
 
-   pages/schema
+   schema/pull
+   schema/push
+   schema/info
+   schema/all
+   schema/system
 
 APIs on GitHub: `Java <https://github.com/ConfigHubPub/JavaAPI>`_, `Python <https://github.com/ConfigHubPub/PythonAPI>`_
 
