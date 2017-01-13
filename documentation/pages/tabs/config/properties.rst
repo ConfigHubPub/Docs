@@ -1,7 +1,7 @@
 .. _properties:
 
 *****************
-Properties Editor
+Properties editor
 *****************
 
 Properties are traditionally defined as:::

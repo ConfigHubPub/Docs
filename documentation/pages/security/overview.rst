@@ -8,7 +8,7 @@ Overview
 All API transactions between the client and the ConfigHub service are made using HTTPs secure protocol.  Private
 installation can be configured to also use HTTP (non-secure) protocol, but then risk in-flight security breach.
 
-Security Groups
+Security groups
 ^^^^^^^^^^^^^^^
 
 Security Group is an abstract wrapper to which properties and/or files may be assigned.  Security Group is
