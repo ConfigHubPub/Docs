@@ -33,7 +33,7 @@ APIs on GitHub: `Java <https://github.com/ConfigHubPub/JavaAPI>`_, `Python <http
 
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Security
 
    pages/security/overview
