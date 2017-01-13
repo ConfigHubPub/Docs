@@ -21,8 +21,8 @@ protected, be encrypted, using the selected cypher and the security group's pass
 
 .. image:: /images/securityGroup.png
 
-Assigning properties and files to security group
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Securing files and properties
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Once the security group is created, you can add any number of properties and files to it.
 
