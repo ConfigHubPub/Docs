@@ -34,6 +34,14 @@ APIs on GitHub: `Java <https://github.com/ConfigHubPub/JavaAPI>`_, `Python <http
 
 .. toctree::
    :maxdepth: 3
+   :caption: Security
+
+   pages/security/overview
+
+
+
+.. toctree::
+   :maxdepth: 3
    :caption: Usage
 
    pages/tabs/config/properties
