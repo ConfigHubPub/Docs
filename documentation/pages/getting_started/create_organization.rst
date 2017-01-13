@@ -1,7 +1,7 @@
 .. _create_organization:
 
 **********************
-Create an Organization
+Create an organization
 **********************
 
 Organizations are a better way to share management responsibilities for your repositories.

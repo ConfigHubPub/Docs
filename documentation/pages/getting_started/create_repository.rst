@@ -1,7 +1,7 @@
 .. _create_repository:
 
 ***************************
-Create ConfigHub Repository
+Create ConfigHub repository
 ***************************
 
 Location where all configuration is kept. Much like a repository for code, ConfigHub
@@ -18,7 +18,7 @@ To create a new repository, once logged in:
 
 .. _choosing_context:
 
-Choosing Repository Context
+Choosing repository context
 ---------------------------
 
 When deciding on a repository context, you are essentially modeling your environments.
@@ -42,7 +42,7 @@ yes to all of them, your labeled context should look like this:
 
 
 
-Context Hierarchy Order
+Context hierarchy order
 -----------------------
 
 Context is defined in the order of precedence. From the widest scope (left), to the

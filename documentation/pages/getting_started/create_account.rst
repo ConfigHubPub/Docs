@@ -1,7 +1,7 @@
 .. _create_account:
 
 ***********************
-Create Personal Account
+Create personal account
 ***********************
 
 

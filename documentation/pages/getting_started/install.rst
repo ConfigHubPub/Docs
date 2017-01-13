@@ -16,7 +16,7 @@ The ConfigHub server application has the following prerequisites:
 * Oracle Java SE 8 or later (latest stable update is recommended)
 
 
-Download and Install
+Download and install
 ~~~~~~~~~~~~~~~~~~~~
 
 * Download and install Java8 to your localhost.  Set the ``JAVA_HOME`` environment variable to Java's bin directory::
@@ -30,7 +30,7 @@ Download and Install
    tar -xzvf confighub-<version>.tar.gz
 
 
-Manual Configuration
+Manual configuration
 ~~~~~~~~~~~~~~~~~~~~
 
 * Edit the configuration file ``confighub.properties`` in confighub-<version> directory.
@@ -71,7 +71,7 @@ Manual Configuration
 
 
 
-ConfigHub License File
+ConfigHub license file
 ~~~~~~~~~~~~~~~~~~~~~~
 
 If you are using a Free ConfigHub version, you do not need a license file.
@@ -82,7 +82,7 @@ confighub-<version> directory (same directory as the confighub.properties file.)
 
 
 
-Starting and Stopping ConfigHub Service
+Starting and stopping ConfigHub service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Start ConfigHub::

@@ -1,6 +1,6 @@
 .. _primer:
 
-ConfigHub Overview
+ConfigHub overview
 ^^^^^^^^^^^^^^^^^^
 
 All configuration can be boiled down to key-value pairs (properties).  Ignoring the format
@@ -21,7 +21,7 @@ Therefore, the merged configuration could be written as::
 And we have our two properties:  ``http.port`` and ``http.redirect``.
 
 
-Context Properties
+Context properties
 ~~~~~~~~~~~~~~~~~~
 
 In order to eliminate a mesh of configuration file and property duplication, ConfigHub changes the definition
@@ -50,7 +50,7 @@ In this example, context is very simple - its composed with a single context hie
 context can be as complex as your environment demands - up to 10 context element hierarchy.
 
 
-Context Resolution
+Context resolution
 ~~~~~~~~~~~~~~~~~~
 
 Context resolution is a process during which value-context of each key is compared to the request context in order

@@ -1,7 +1,7 @@
 .. _gettingstarted:
 
 **********************
-Installation and Setup
+Installation and setup
 **********************
 
 The fastest way to evaluate ConfigHub is to use the
