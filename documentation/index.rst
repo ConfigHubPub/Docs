@@ -24,6 +24,7 @@ programmatically or through the web-based user interface.
 
    pages/schema/pull
    pages/schema/push
+   pages/schema/rawFile
    pages/schema/info
    pages/schema/all
    pages/schema/system
