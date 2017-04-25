@@ -40,7 +40,14 @@ Usage
       "repo": "Demo",
       "context": "Production;TimeKepper",
       "files": {
-        "demo.props": "dbUrl \u003d jdbc:mysql://prod.mydomain.com:3306/ProdDatabase\n\ndbUser \u003d admin\n\ndbPass \u003d prod-password"
+        "demo.props": {
+          "content": " ... ",
+          "content-type": "text/plain"
+        },
+        "server.xml": {
+          "content": " ... ",
+          "content-type": "application/xml"
+        }
       },
       "properties": {
         "db.host": {

@@ -21,12 +21,14 @@ protected, be encrypted, using the selected cypher and the security group's pass
 
 .. image:: /images/securityGroup.png
 
+
+
 Securing files and properties
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Once the security group is created, you can add any number of properties and files to it.
-
 To assign an existing property to a security group, you need to add a security group to the key.
+
 
 
 Assignment to a property
@@ -38,4 +40,6 @@ Assignment to a property
 Assignment to a file
 ************************
 .. image:: /images/fileSecurityGroup.png
+
+
 
