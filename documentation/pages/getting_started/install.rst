@@ -71,15 +71,6 @@ Manual configuration
 
 
 
-ConfigHub license file
-~~~~~~~~~~~~~~~~~~~~~~
-
-If you are using a Free ConfigHub version, you do not need a license file.
-
-For Enterprise license holders, place your license file "license.json" received from ConfigHub into the
-confighub-<version> directory (same directory as the confighub.properties file.)
-
-
 
 
 Starting and stopping ConfigHub service
