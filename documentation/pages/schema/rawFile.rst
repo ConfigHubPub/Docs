@@ -1,18 +1,18 @@
-****
-PULL
-****
+********
+RAW FILE
+********
 
-With fully specified context, pull configuration from ConfigHub service.
-The JSON response may contain key-value pairs, as well as resolved files (as per request).
+With fully specified context, pull a specific file from ConfigHub service.
+The response contains raw, resolved configuration file
 
-- API URL (with token):  ``https://confighub-api/rest/pull``
-- API URL (no token):  ``https://confighub-api/rest/pull/<account>/<repository>``
+- API URL (with token):  ``https://confighub-api/rest/rawFile``
+- API URL (no token):  ``https://confighub-api/rest/rawFile/<account>/<repository>``
 
 
 .. note:: - All data returned is in JSON format.
-   - All dates are expected and returned in ``ISO 8601`` format (UTC): ``YYYY-MM-DDTHH:MM:SSZ``.
+- All dates are expected and returned in ``ISO 8601`` format (UTC): ``YYYY-MM-DDTHH:MM:SSZ``.
    - All parameters are passed through HTTP header fields.
-   - Returned data will contain resolved properties and files, unless limited by the ``No-Properties`` or ``No-Files`` flags.
+   - Returned data is the content of the resolved file.
    - Method: GET
 
 
@@ -21,52 +21,15 @@ Usage
 
 .. code-block:: bash
 
-   curl -i https://api.confighub.com/rest/pull     \
+   curl -i https://api.confighub.com/rest/rawFile  \
         -H "Client-Token: <token>"                 \
         -H "Context: <context>"                    \
+        -H "File: <absolute path>"                 \
         -H "Application-Name: myApp"               \
         -H "Client-Version: <optional version>"    \
         -H "Tag: <optional tag label>"             \
         -H "Repository-Date: <optional repo date>"
 
-.. code-block:: json
-
-    HTTP/1.1 200 OK
-    Date: Fri, 10 Jun 2016 22:38:13 GMT
-    Content-Type: application/json
-    Content-Length: 2167
-    Server: TomEE
-    {
-      "generatedOn": "06/10/2016 22:38:13",
-      "account": "ConfigHub",
-      "repo": "Demo",
-      "context": "Production;TimeKepper",
-      "files": {
-        "demo.props": {
-          "content": " ... ",
-          "content-type": "text/plain"
-        },
-        "server.xml": {
-          "content": " ... ",
-          "content-type": "application/xml"
-        }
-      },
-      "properties": {
-        "db.host": {
-          "val": "prod.mydomain.com"
-        },
-        "server.http.port": {
-          "val": "80"
-        },
-        "db.name": {
-          "val": "ProdDatabase"
-        },
-        ...
-        "db.user": {
-          "val": "admin"
-        }
-      }
-    }
 
 
 
@@ -124,26 +87,4 @@ Request Headers
 *Application-Name*
 
    This field helps you identify application or a client pulling configuration. Visible in Pull Request tab.
-
-*Include-Comments*
-
-   If value is ``true`` response includes comments for property keys.
-
-*Include-Value-Context*
-
-   If value is ``true`` response includes context of resolved property values.
-
-*Pretty*
-
-   If value is ``true``, returned JSON is 'pretty' - formatted.
-
-*No-Properties*
-
-  If value is ``true`` key-value pairs are not returned. This is useful if you are only interested in
-  pulling files, and want to make transaction more efficient.
-
-*No-Files*
-
-  If value is ``true`` resolved files are not returned. This is useful if you are only interested in
-  pulling properties, and want to make transaction more efficient.
 
