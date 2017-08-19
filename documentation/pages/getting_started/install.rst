@@ -87,8 +87,7 @@ The resource IDs ``ConfigHubMainDS`` and ``ConfigHubApiRequestsDS`` as well as p
 ``JtaManaged = false`` have to remain unchanged.  The rest of the datasource definition can
 be modified to your specific needs.
 
-.. note::  For the rest of the the optional parameters, please consult
-`Tomee documentation <http://tomee.apache.org/datasource-config.html>`_
+.. note::  For the rest of the the optional parameters, please consult `Tomee documentation <http://tomee.apache.org/datasource-config.html>`_
 
 
 * Server configuration
