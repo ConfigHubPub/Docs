@@ -53,10 +53,11 @@ a database configuration:
 
        <Resource id="ConfigHubMainDS" type="DataSource">
            JdbcDriver = org.postgresql.Driver
-           JdbcUrl = jdbc:postgresql://127.0.0.1:5432/ConfigHubMain?autoReconnect=true
+           JdbcUrl = jdbc:postgresql://127.0.0.1:5432/ConfigHubMain
            UserName = username
            Password = password
 
+           validationQuery="SELECT 1"
            JtaManaged = false
            initialSize = 20
            maxActive = 100
@@ -68,10 +69,11 @@ a database configuration:
 
        <Resource id="ConfigHubApiRequestsDS" type="DataSource">
            JdbcDriver = com.mysql.jdbc.Driver
-           JdbcUrl = jdbc:mysql://127.0.0.1:3306/ConfigHubClientRequests?autoReconnect=true
+           JdbcUrl = jdbc:mysql://127.0.0.1:3306/ConfigHubClientRequests
            UserName = username
            Password = password
 
+           validationQuery="SELECT 1"
            JtaManaged = false
            initialSize = 20
            maxActive = 50
