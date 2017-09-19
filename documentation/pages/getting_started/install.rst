@@ -57,14 +57,10 @@ a database configuration:
            UserName = username
            Password = password
 
-           validationQuery="SELECT 1"
            JtaManaged = false
-           initialSize = 20
-           maxActive = 100
-           maxIdle = 50
-           maxWaitTime = 3 seconds
-           minEvictableIdleTime = 3 seconds
-           numTestsPerEvictionRun = 30
+           validationQuery="SELECT 1"
+           maxWaitTime = 2 seconds
+           maxActive = 200
        </Resource>
 
        <Resource id="ConfigHubApiRequestsDS" type="DataSource">
@@ -73,14 +69,10 @@ a database configuration:
            UserName = username
            Password = password
 
-           validationQuery="SELECT 1"
            JtaManaged = false
-           initialSize = 20
-           maxActive = 50
-           maxIdle = 50
-           maxWaitTime = 3 seconds
-           minEvictableIdleTime = 3 seconds
-           numTestsPerEvictionRun = 30
+           validationQuery="SELECT 1"
+           maxWaitTime = 2 seconds
+           maxActive = 200
        </Resource>
 
    </tomee>
@@ -94,25 +86,26 @@ be modified to your specific needs.
 
 * Server configuration
 
-Edit the configuration file ``confighub.properties`` in confighub-<version> directory.
+Edit the configuration file ``confighub.sh`` or ``confighub.bat`` for Windows installations in confighub-<version> directory.
 Each configuration parameter has to be specified.
 
 .. code-block:: bash
 
-   # Path to the location where all ConfigHub service logs are stored.
-   confighub.logging.path = /var/log/confighub
-
    # Memory assigned to the ConfigHub service.  It is recommended to assign 4g or more.
-   confighub.memory = 4g
+   export ALLOCATED_MEMORY=4g
 
    # HTTP and HTTPs ports
-   confighub.http.port = 80
-   confighub.https.port = 443
+   export HTTP_PORT=80
+   export HTTPS_PORT=443
+
+   # Path to the location where all ConfigHub service logs are stored.
+   export LOG_PATH=/var/log/confighub
 
    # Specify an override to the default self-signed certificate/keystore.
-   confighub.https.keystoreFile = cert/confighub_default.jks
-   confighub.https.keystoreAlias = confighub
-   confighub.https.keystorePass = confighub
+   export KEYSTORE_FILE=cert/confighub_default.jks
+   export KEYSTORE_ALIAS=confighub
+   export KEYSTORE_PASSWORD=confighub
+
 
 
 
