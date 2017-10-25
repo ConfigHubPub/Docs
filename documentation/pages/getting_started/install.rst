@@ -39,9 +39,8 @@ There are two configuration sections:
 
 * Database connections
 
-Database connections are configured in ``confighub-<version>/server/conf/tomee.xml`` file.
-ConfigHub uses 2 databases, one for storage of all repository and user related data, and the other
-for the storage of all client API requests.
+Database connection is configured in ``confighub-<version>/server/conf/tomee.xml`` file.
+ConfigHub uses a database for storage of all repository and user related data.
 
 As of version v1.6, ConfigHub supports MySQL and PostgreSQL databases.  Here's an example of
 a database configuration:
@@ -63,21 +62,9 @@ a database configuration:
            maxActive = 200
        </Resource>
 
-       <Resource id="ConfigHubApiRequestsDS" type="DataSource">
-           JdbcDriver = com.mysql.jdbc.Driver
-           JdbcUrl = jdbc:mysql://127.0.0.1:3306/ConfigHubClientRequests
-           UserName = username
-           Password = password
-
-           JtaManaged = false
-           validationQuery="SELECT 1"
-           maxWaitTime = 2 seconds
-           maxActive = 200
-       </Resource>
-
    </tomee>
 
-The resource IDs ``ConfigHubMainDS`` and ``ConfigHubApiRequestsDS`` as well as parameter
+The resource IDs ``ConfigHubMainDS`` and the parameter
 ``JtaManaged = false`` have to remain unchanged.  The rest of the datasource definition can
 be modified to your specific needs.
 
