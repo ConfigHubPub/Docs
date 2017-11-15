@@ -1,13 +1,5 @@
 .. _security:
 
-*****************
-Security Overview
-*****************
-
-
-All API transactions between the client and the ConfigHub service are made using HTTPs secure protocol.  Private
-installation can be configured to also use HTTP (non-secure) protocol, but then risk in-flight security breach.
-
 Security groups
 ^^^^^^^^^^^^^^^
 
@@ -24,7 +16,7 @@ protected, be encrypted, using the selected cypher and the security group's pass
 
 
 Securing files and properties
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Once the security group is created, you can add any number of properties and files to it.
 To assign an existing property to a security group, you need to add a security group to the key.
@@ -36,14 +28,14 @@ unless pre-authorized token or security group password is supplied in the API re
 
 
 Assignment to a property
-************************
+------------------------
 
 .. image:: /images/keySecurityGroup.png
 
 
 
 Assignment to a file
-************************
+--------------------
 
 .. image:: /images/fileSecurityGroup.png
 
