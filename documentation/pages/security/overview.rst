@@ -41,3 +41,10 @@ Assignment to a file
 
 
 
+Tokens
+^^^^^^
+
+Tokens are for client API requests.  They identify a repository, and may pre-authorize decryption of properties and files
+assigned to security groups.
+
+.. image:: /images/token.png
