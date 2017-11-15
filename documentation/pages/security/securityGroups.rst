@@ -22,10 +22,12 @@ To assign an existing property to a security group, you need to add a security g
 
 
 1. Assignment to a property
+
 .. image:: /images/keySecurityGroup.png
 
 
 
 2. Assignment to a file
+
 .. image:: /images/fileSecurityGroup.png
 
