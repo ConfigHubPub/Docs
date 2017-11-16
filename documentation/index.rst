@@ -1,8 +1,3 @@
-.. ConfigHub documentation master file, created by
-   sphinx-quickstart on Sat Dec  3 21:38:12 2016.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Welcome to ConfigHub documentation
 ==================================
 
@@ -26,8 +21,8 @@ programmatically or through the web-based user interface.
 
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Data Security
+   :maxdepth: 1
+   :caption: Property and File Security
 
    pages/security/securityGroups
 
@@ -37,6 +32,8 @@ programmatically or through the web-based user interface.
    :maxdepth: 2
    :caption: Access Controls
 
+   pages/access/teams
+   pages/access/access
    pages/access/tokens
 
 
