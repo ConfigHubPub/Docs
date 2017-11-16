@@ -19,21 +19,6 @@ programmatically or through the web-based user interface.
 
 
 .. toctree::
-   :maxdepth: 1
-   :caption: API Requests and Schema
-
-   pages/schema/pull
-   pages/schema/push
-   pages/schema/rawFile
-   pages/schema/info
-   pages/schema/all
-   pages/schema/system
-
-APIs on GitHub: `Java <https://github.com/ConfigHubPub/JavaAPI>`_, `Python <https://github.com/ConfigHubPub/PythonAPI>`_
-
-
-
-.. toctree::
    :maxdepth: 2
    :caption: Data Security
 
@@ -47,6 +32,19 @@ APIs on GitHub: `Java <https://github.com/ConfigHubPub/JavaAPI>`_, `Python <http
 
    pages/access/tokens
 
+
+.. toctree::
+   :maxdepth: 1
+   :caption: API Requests and Schema
+
+   pages/schema/pull
+   pages/schema/push
+   pages/schema/rawFile
+   pages/schema/info
+   pages/schema/all
+   pages/schema/system
+
+APIs on GitHub: `Java <https://github.com/ConfigHubPub/JavaAPI>`_, `Python <https://github.com/ConfigHubPub/PythonAPI>`_
 
 
 .. toctree::
