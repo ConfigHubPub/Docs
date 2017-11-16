@@ -20,7 +20,7 @@ programmatically or through the web-based user interface.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Schema and API
+   :caption: API Requests and Schema
 
    pages/schema/pull
    pages/schema/push
