@@ -15,10 +15,10 @@ Tokens with a team assigned to "Push Access Rules", will prevent modification to
 team prevents write access.
 
 
-.. image:: /images/token.png
-
 Creating a token
 ================
+
+.. image:: /images/token.png
 
 1. Token name has to be unique among tokens.
 2. Expiration date is optional.  If set, token will no longer be accepted after the expiration is reached.
@@ -27,6 +27,19 @@ Creating a token
 5. Security Groups entered into this field will pre-authorize the token to decrypt values and files assigned to them prior to returning the data via API Pull request.
 6. Managed By - let's you specify who has visibility to this token.
 
+
+Adding security groups to tokens
+================================
+
+.. image:: /images/tokens.png
+
+Security Groups can be added to a token at creation time, or any time thereafter.  Furthermore, all repository
+members may edit any other token to add/remove security groups from them.  As long as they can authenticate to the
+security group, they can adjust any other token.
+
+The intention is that, if need be, a user which knows a password to a security group can extend access to
+config that is protected/encrypted by the security group without sharing security group's the password with another
+user - token owner.
 
 Deleting a token
 ================
