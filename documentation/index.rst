@@ -19,6 +19,13 @@ programmatically or through the web-based user interface.
 
 
 .. toctree::
+   :maxdepth: 3
+   :caption: Usage
+
+   pages/tabs/config/properties
+
+
+.. toctree::
    :maxdepth: 2
    :caption: Data Security
 
@@ -46,12 +53,6 @@ programmatically or through the web-based user interface.
 
 APIs on GitHub: `Java <https://github.com/ConfigHubPub/JavaAPI>`_, `Python <https://github.com/ConfigHubPub/PythonAPI>`_
 
-
-.. toctree::
-   :maxdepth: 3
-   :caption: Usage
-
-   pages/tabs/config/properties
 
 
 
