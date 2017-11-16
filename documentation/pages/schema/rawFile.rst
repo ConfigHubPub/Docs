@@ -1,6 +1,6 @@
-*************
-Raw File Pull
-*************
+****************
+Single File Pull
+****************
 
 With fully specified context, pull a specific file from ConfigHub service.
 The response contains raw, resolved configuration file

@@ -1,6 +1,6 @@
-************
-Repositories
-************
+****************
+All Repositories
+****************
 
 Use this API to get full details of settings for all defined repositories.
 
