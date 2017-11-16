@@ -1,5 +1,5 @@
 ****
-PULL
+Pull
 ****
 
 With fully specified context, pull configuration from ConfigHub service.
