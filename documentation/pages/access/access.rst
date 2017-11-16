@@ -3,6 +3,12 @@
 Team Access Control
 ^^^^^^^^^^^^^^^^^^^
 
+Team access rules let repository owners/admins set write limits to both configuration properties and files for each team.
+The rules defined limit users ability to create/modify/delete properties and files.  The rules apply when manipulating
+config via UI as well as API.
+
+For access rules to apply via API, a token needs to apply access rules for a specific team.
+
 To enable access controls for teams, go to::
 
     Settings > Configuration > Access control management
