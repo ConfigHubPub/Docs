@@ -82,7 +82,7 @@ Request Headers
 *Context*
 
    Context for the pull request has to be a fully-qualified-context (each context rank has to be specified -
-   no wildcards). Context items are semi-colon delimited, and are ordered in order of have to be in context
+   no wildcards). Context items are semi-colon delimited, and have to be in context
    rank order. For example, a repository with context size of 3 levels ``Environment > Application > Instance``
    could be defined as::
 
